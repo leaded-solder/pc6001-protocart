@@ -2,7 +2,7 @@
 
   (general
     (thickness 1.6)
-    (drawings 3)
+    (drawings 4)
     (tracks 0)
     (zones 0)
     (modules 1)
@@ -197,8 +197,8 @@
     (add_net /WR)
   )
 
-  (module "PC6001 Edge Connector:PC6001 Cartridge Connector" (layer F.Cu) (tedit 5DDDE6E2) (tstamp 5DDE0A39)
-    (at 123.444 108.204 90)
+  (module "PC6001 Edge Connector:PC6001 Cartridge Connector" (layer F.Cu) (tedit 5DDDE6E2) (tstamp 5DDDF28F)
+    (at 123.825 108.585 90)
     (path /5DDDE87B)
     (fp_text reference J1 (at 0 5.08 90) (layer F.SilkS)
       (effects (font (size 1 1) (thickness 0.15)))
@@ -206,7 +206,7 @@
     (fp_text value Conn_02x25_Odd_Even (at 0 6.985 90) (layer F.Fab)
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (pad 23 smd custom (at -2.54 0 90) (size 1.524 1.524) (layers B.Cu)
+    (pad 23 smd custom (at -2.54 0 90) (size 1 1) (layers B.Cu)
       (net 1 /A12) (zone_connect 0)
       (options (clearance outline) (anchor circle))
       (primitives
@@ -215,7 +215,7 @@
         (gr_poly (pts
            (xy 0.635 2.54) (xy 0 3.81) (xy -0.635 2.54)) (width 0.1))
       ))
-    (pad 47 smd custom (at 27.94 0 90) (size 1.524 1.524) (layers B.Cu)
+    (pad 47 smd custom (at 27.94 0 90) (size 1 1) (layers B.Cu)
       (net 2 /5V) (zone_connect 0)
       (options (clearance outline) (anchor circle))
       (primitives
@@ -224,7 +224,7 @@
         (gr_poly (pts
            (xy 0.635 2.54) (xy 0 3.81) (xy -0.635 2.54)) (width 0.1))
       ))
-    (pad 33 smd custom (at 10.16 0 90) (size 1.524 1.524) (layers B.Cu)
+    (pad 33 smd custom (at 10.16 0 90) (size 1 1) (layers B.Cu)
       (net 3 /D1) (zone_connect 0)
       (options (clearance outline) (anchor circle))
       (primitives
@@ -233,7 +233,7 @@
         (gr_poly (pts
            (xy 0.635 2.54) (xy 0 3.81) (xy -0.635 2.54)) (width 0.1))
       ))
-    (pad 21 smd custom (at -5.08 0 90) (size 1.524 1.524) (layers B.Cu)
+    (pad 21 smd custom (at -5.08 0 90) (size 1 1) (layers B.Cu)
       (net 4 /A7) (zone_connect 0)
       (options (clearance outline) (anchor circle))
       (primitives
@@ -242,7 +242,7 @@
         (gr_poly (pts
            (xy 0.635 2.54) (xy 0 3.81) (xy -0.635 2.54)) (width 0.1))
       ))
-    (pad 37 smd custom (at 15.24 0 90) (size 1.524 1.524) (layers B.Cu)
+    (pad 37 smd custom (at 15.24 0 90) (size 1 1) (layers B.Cu)
       (net 5 /D5) (zone_connect 0)
       (options (clearance outline) (anchor circle))
       (primitives
@@ -251,7 +251,7 @@
         (gr_poly (pts
            (xy 0.635 2.54) (xy 0 3.81) (xy -0.635 2.54)) (width 0.1))
       ))
-    (pad 19 smd custom (at -7.62 0 90) (size 1.524 1.524) (layers B.Cu)
+    (pad 19 smd custom (at -7.62 0 90) (size 1 1) (layers B.Cu)
       (net 6 /A11) (zone_connect 0)
       (options (clearance outline) (anchor circle))
       (primitives
@@ -260,7 +260,7 @@
         (gr_poly (pts
            (xy 0.635 2.54) (xy 0 3.81) (xy -0.635 2.54)) (width 0.1))
       ))
-    (pad 31 smd custom (at 7.62 0 90) (size 1.524 1.524) (layers B.Cu)
+    (pad 31 smd custom (at 7.62 0 90) (size 1 1) (layers B.Cu)
       (net 7 /A5) (zone_connect 0)
       (options (clearance outline) (anchor circle))
       (primitives
@@ -269,7 +269,7 @@
         (gr_poly (pts
            (xy 0.635 2.54) (xy 0 3.81) (xy -0.635 2.54)) (width 0.1))
       ))
-    (pad 49 smd custom (at 30.48 0 90) (size 1.524 1.524) (layers B.Cu)
+    (pad 49 smd custom (at 30.48 0 90) (size 1 1) (layers B.Cu)
       (net 8 /-5V) (zone_connect 0)
       (options (clearance outline) (anchor circle))
       (primitives
@@ -278,7 +278,7 @@
         (gr_poly (pts
            (xy 0.635 2.54) (xy 0 3.81) (xy -0.635 2.54)) (width 0.1))
       ))
-    (pad 25 smd custom (at 0 0 90) (size 1.524 1.524) (layers B.Cu)
+    (pad 25 smd custom (at 0 0 90) (size 1 1) (layers B.Cu)
       (net 9 /A14) (zone_connect 0)
       (options (clearance outline) (anchor circle))
       (primitives
@@ -287,7 +287,7 @@
         (gr_poly (pts
            (xy 0.635 2.54) (xy 0 3.81) (xy -0.635 2.54)) (width 0.1))
       ))
-    (pad 39 smd custom (at 17.78 0 90) (size 1.524 1.524) (layers B.Cu)
+    (pad 39 smd custom (at 17.78 0 90) (size 1 1) (layers B.Cu)
       (net 10 /D7) (zone_connect 0)
       (options (clearance outline) (anchor circle))
       (primitives
@@ -296,7 +296,7 @@
         (gr_poly (pts
            (xy 0.635 2.54) (xy 0 3.81) (xy -0.635 2.54)) (width 0.1))
       ))
-    (pad 9 smd custom (at -20.32 0 90) (size 1.524 1.524) (layers B.Cu)
+    (pad 9 smd custom (at -20.32 0 90) (size 1 1) (layers B.Cu)
       (net 11 /M1) (zone_connect 0)
       (options (clearance outline) (anchor circle))
       (primitives
@@ -305,7 +305,7 @@
         (gr_poly (pts
            (xy 0.635 2.54) (xy 0 3.81) (xy -0.635 2.54)) (width 0.1))
       ))
-    (pad 1 smd custom (at -30.48 0 90) (size 1.524 1.524) (layers B.Cu)
+    (pad 1 smd custom (at -30.48 0 90) (size 1 1) (layers B.Cu)
       (net 12 /RAS2) (zone_connect 0)
       (options (clearance outline) (anchor circle))
       (primitives
@@ -314,7 +314,7 @@
         (gr_poly (pts
            (xy 0.635 2.54) (xy 0 3.81) (xy -0.635 2.54)) (width 0.1))
       ))
-    (pad 3 smd custom (at -27.94 0 90) (size 1.524 1.524) (layers B.Cu)
+    (pad 3 smd custom (at -27.94 0 90) (size 1 1) (layers B.Cu)
       (net 13 /DRD2) (zone_connect 0)
       (options (clearance outline) (anchor circle))
       (primitives
@@ -323,7 +323,7 @@
         (gr_poly (pts
            (xy 0.635 2.54) (xy 0 3.81) (xy -0.635 2.54)) (width 0.1))
       ))
-    (pad 29 smd custom (at 5.08 0 90) (size 1.524 1.524) (layers B.Cu)
+    (pad 29 smd custom (at 5.08 0 90) (size 1 1) (layers B.Cu)
       (net 14 /A3) (zone_connect 0)
       (options (clearance outline) (anchor circle))
       (primitives
@@ -332,7 +332,7 @@
         (gr_poly (pts
            (xy 0.635 2.54) (xy 0 3.81) (xy -0.635 2.54)) (width 0.1))
       ))
-    (pad 43 smd custom (at 22.86 0 90) (size 1.524 1.524) (layers B.Cu)
+    (pad 43 smd custom (at 22.86 0 90) (size 1 1) (layers B.Cu)
       (net 15 /GND) (zone_connect 0)
       (options (clearance outline) (anchor circle))
       (primitives
@@ -341,7 +341,7 @@
         (gr_poly (pts
            (xy 0.635 2.54) (xy 0 3.81) (xy -0.635 2.54)) (width 0.1))
       ))
-    (pad 35 smd custom (at 12.7 0 90) (size 1.524 1.524) (layers B.Cu)
+    (pad 35 smd custom (at 12.7 0 90) (size 1 1) (layers B.Cu)
       (net 16 /D3) (zone_connect 0)
       (options (clearance outline) (anchor circle))
       (primitives
@@ -350,7 +350,7 @@
         (gr_poly (pts
            (xy 0.635 2.54) (xy 0 3.81) (xy -0.635 2.54)) (width 0.1))
       ))
-    (pad 15 smd custom (at -12.7 0 90) (size 1.524 1.524) (layers B.Cu)
+    (pad 15 smd custom (at -12.7 0 90) (size 1 1) (layers B.Cu)
       (net 17 /RESET) (zone_connect 0)
       (options (clearance outline) (anchor circle))
       (primitives
@@ -359,7 +359,7 @@
         (gr_poly (pts
            (xy 0.635 2.54) (xy 0 3.81) (xy -0.635 2.54)) (width 0.1))
       ))
-    (pad 13 smd custom (at -15.24 0 90) (size 1.524 1.524) (layers B.Cu)
+    (pad 13 smd custom (at -15.24 0 90) (size 1 1) (layers B.Cu)
       (net 18 /WR) (zone_connect 0)
       (options (clearance outline) (anchor circle))
       (primitives
@@ -368,7 +368,7 @@
         (gr_poly (pts
            (xy 0.635 2.54) (xy 0 3.81) (xy -0.635 2.54)) (width 0.1))
       ))
-    (pad 41 smd custom (at 20.32 0 90) (size 1.524 1.524) (layers B.Cu)
+    (pad 41 smd custom (at 20.32 0 90) (size 1 1) (layers B.Cu)
       (net 15 /GND) (zone_connect 0)
       (options (clearance outline) (anchor circle))
       (primitives
@@ -377,7 +377,7 @@
         (gr_poly (pts
            (xy 0.635 2.54) (xy 0 3.81) (xy -0.635 2.54)) (width 0.1))
       ))
-    (pad 7 smd custom (at -22.86 0 90) (size 1.524 1.524) (layers B.Cu)
+    (pad 7 smd custom (at -22.86 0 90) (size 1 1) (layers B.Cu)
       (net 19 /WAIT) (zone_connect 0)
       (options (clearance outline) (anchor circle))
       (primitives
@@ -386,7 +386,7 @@
         (gr_poly (pts
            (xy 0.635 2.54) (xy 0 3.81) (xy -0.635 2.54)) (width 0.1))
       ))
-    (pad 45 smd custom (at 25.4 0 90) (size 1.524 1.524) (layers B.Cu)
+    (pad 45 smd custom (at 25.4 0 90) (size 1 1) (layers B.Cu)
       (net 2 /5V) (zone_connect 0)
       (options (clearance outline) (anchor circle))
       (primitives
@@ -395,7 +395,7 @@
         (gr_poly (pts
            (xy 0.635 2.54) (xy 0 3.81) (xy -0.635 2.54)) (width 0.1))
       ))
-    (pad 5 smd custom (at -25.4 0 90) (size 1.524 1.524) (layers B.Cu)
+    (pad 5 smd custom (at -25.4 0 90) (size 1 1) (layers B.Cu)
       (net 20 /WE) (zone_connect 0)
       (options (clearance outline) (anchor circle))
       (primitives
@@ -404,7 +404,7 @@
         (gr_poly (pts
            (xy 0.635 2.54) (xy 0 3.81) (xy -0.635 2.54)) (width 0.1))
       ))
-    (pad 17 smd custom (at -10.16 0 90) (size 1.524 1.524) (layers B.Cu)
+    (pad 17 smd custom (at -10.16 0 90) (size 1 1) (layers B.Cu)
       (net 21 /A9) (zone_connect 0)
       (options (clearance outline) (anchor circle))
       (primitives
@@ -413,7 +413,7 @@
         (gr_poly (pts
            (xy 0.635 2.54) (xy 0 3.81) (xy -0.635 2.54)) (width 0.1))
       ))
-    (pad 11 smd custom (at -17.78 0 90) (size 1.524 1.524) (layers B.Cu)
+    (pad 11 smd custom (at -17.78 0 90) (size 1 1) (layers B.Cu)
       (net 22 /IORQ) (zone_connect 0)
       (options (clearance outline) (anchor circle))
       (primitives
@@ -422,7 +422,7 @@
         (gr_poly (pts
            (xy 0.635 2.54) (xy 0 3.81) (xy -0.635 2.54)) (width 0.1))
       ))
-    (pad 27 smd custom (at 2.54 0 90) (size 1.524 1.524) (layers B.Cu)
+    (pad 27 smd custom (at 2.54 0 90) (size 1 1) (layers B.Cu)
       (net 23 /A1) (zone_connect 0)
       (options (clearance outline) (anchor circle))
       (primitives
@@ -431,7 +431,7 @@
         (gr_poly (pts
            (xy 0.635 2.54) (xy 0 3.81) (xy -0.635 2.54)) (width 0.1))
       ))
-    (pad 6 smd custom (at -25.4 0 90) (size 1.524 1.524) (layers F.Cu)
+    (pad 6 smd custom (at -25.4 0 90) (size 1 1) (layers F.Cu)
       (net 24 /EROM) (zone_connect 0)
       (options (clearance outline) (anchor circle))
       (primitives
@@ -440,7 +440,7 @@
         (gr_poly (pts
            (xy 0.635 2.54) (xy 0 3.81) (xy -0.635 2.54)) (width 0.1))
       ))
-    (pad 12 smd custom (at -17.78 0 90) (size 1.524 1.524) (layers F.Cu)
+    (pad 12 smd custom (at -17.78 0 90) (size 1 1) (layers F.Cu)
       (net 25 /MREQ) (zone_connect 0)
       (options (clearance outline) (anchor circle))
       (primitives
@@ -449,7 +449,7 @@
         (gr_poly (pts
            (xy 0.635 2.54) (xy 0 3.81) (xy -0.635 2.54)) (width 0.1))
       ))
-    (pad 14 smd custom (at -15.24 0 90) (size 1.524 1.524) (layers F.Cu)
+    (pad 14 smd custom (at -15.24 0 90) (size 1 1) (layers F.Cu)
       (net 26 /RD) (zone_connect 0)
       (options (clearance outline) (anchor circle))
       (primitives
@@ -458,7 +458,7 @@
         (gr_poly (pts
            (xy 0.635 2.54) (xy 0 3.81) (xy -0.635 2.54)) (width 0.1))
       ))
-    (pad 24 smd custom (at -2.54 0 90) (size 1.524 1.524) (layers F.Cu)
+    (pad 24 smd custom (at -2.54 0 90) (size 1 1) (layers F.Cu)
       (net 27 /A8) (zone_connect 0)
       (options (clearance outline) (anchor circle))
       (primitives
@@ -467,7 +467,7 @@
         (gr_poly (pts
            (xy 0.635 2.54) (xy 0 3.81) (xy -0.635 2.54)) (width 0.1))
       ))
-    (pad 8 smd custom (at -22.86 0 90) (size 1.524 1.524) (layers F.Cu)
+    (pad 8 smd custom (at -22.86 0 90) (size 1 1) (layers F.Cu)
       (net 28 /NMI) (zone_connect 0)
       (options (clearance outline) (anchor circle))
       (primitives
@@ -476,7 +476,7 @@
         (gr_poly (pts
            (xy 0.635 2.54) (xy 0 3.81) (xy -0.635 2.54)) (width 0.1))
       ))
-    (pad 16 smd custom (at -12.7 0 90) (size 1.524 1.524) (layers F.Cu)
+    (pad 16 smd custom (at -12.7 0 90) (size 1 1) (layers F.Cu)
       (net 29 /CLK-16M) (zone_connect 0)
       (options (clearance outline) (anchor circle))
       (primitives
@@ -485,7 +485,7 @@
         (gr_poly (pts
            (xy 0.635 2.54) (xy 0 3.81) (xy -0.635 2.54)) (width 0.1))
       ))
-    (pad 4 smd custom (at -27.94 0 90) (size 1.524 1.524) (layers F.Cu)
+    (pad 4 smd custom (at -27.94 0 90) (size 1 1) (layers F.Cu)
       (net 30 /CS2) (zone_connect 0)
       (options (clearance outline) (anchor circle))
       (primitives
@@ -494,7 +494,7 @@
         (gr_poly (pts
            (xy 0.635 2.54) (xy 0 3.81) (xy -0.635 2.54)) (width 0.1))
       ))
-    (pad 2 smd custom (at -30.48 0 90) (size 1.524 1.524) (layers F.Cu)
+    (pad 2 smd custom (at -30.48 0 90) (size 1 1) (layers F.Cu)
       (net 31 /CS3) (zone_connect 0)
       (options (clearance outline) (anchor circle))
       (primitives
@@ -503,7 +503,7 @@
         (gr_poly (pts
            (xy 0.635 2.54) (xy 0 3.81) (xy -0.635 2.54)) (width 0.1))
       ))
-    (pad 10 smd custom (at -20.32 0 90) (size 1.524 1.524) (layers F.Cu)
+    (pad 10 smd custom (at -20.32 0 90) (size 1 1) (layers F.Cu)
       (net 32 /EXCAS) (zone_connect 0)
       (options (clearance outline) (anchor circle))
       (primitives
@@ -512,7 +512,7 @@
         (gr_poly (pts
            (xy 0.635 2.54) (xy 0 3.81) (xy -0.635 2.54)) (width 0.1))
       ))
-    (pad 20 smd custom (at -7.62 0 90) (size 1.524 1.524) (layers F.Cu)
+    (pad 20 smd custom (at -7.62 0 90) (size 1 1) (layers F.Cu)
       (net 33 /A10) (zone_connect 0)
       (options (clearance outline) (anchor circle))
       (primitives
@@ -521,7 +521,7 @@
         (gr_poly (pts
            (xy 0.635 2.54) (xy 0 3.81) (xy -0.635 2.54)) (width 0.1))
       ))
-    (pad 22 smd custom (at -5.08 0 90) (size 1.524 1.524) (layers F.Cu)
+    (pad 22 smd custom (at -5.08 0 90) (size 1 1) (layers F.Cu)
       (net 34 /A6) (zone_connect 0)
       (options (clearance outline) (anchor circle))
       (primitives
@@ -530,7 +530,7 @@
         (gr_poly (pts
            (xy 0.635 2.54) (xy 0 3.81) (xy -0.635 2.54)) (width 0.1))
       ))
-    (pad 18 smd custom (at -10.16 0 90) (size 1.524 1.524) (layers F.Cu)
+    (pad 18 smd custom (at -10.16 0 90) (size 1 1) (layers F.Cu)
       (net 35 /A15) (zone_connect 0)
       (options (clearance outline) (anchor circle))
       (primitives
@@ -539,7 +539,7 @@
         (gr_poly (pts
            (xy 0.635 2.54) (xy 0 3.81) (xy -0.635 2.54)) (width 0.1))
       ))
-    (pad 50 smd custom (at 30.48 0 90) (size 1.524 1.524) (layers F.Cu)
+    (pad 50 smd custom (at 30.48 0 90) (size 1 1) (layers F.Cu)
       (net 36 /-12V) (zone_connect 0)
       (options (clearance outline) (anchor circle))
       (primitives
@@ -548,7 +548,7 @@
         (gr_poly (pts
            (xy 0.635 2.54) (xy 0 3.81) (xy -0.635 2.54)) (width 0.1))
       ))
-    (pad 48 smd custom (at 27.94 0 90) (size 1.524 1.524) (layers F.Cu)
+    (pad 48 smd custom (at 27.94 0 90) (size 1 1) (layers F.Cu)
       (net 37 /12V) (zone_connect 0)
       (options (clearance outline) (anchor circle))
       (primitives
@@ -557,7 +557,7 @@
         (gr_poly (pts
            (xy 0.635 2.54) (xy 0 3.81) (xy -0.635 2.54)) (width 0.1))
       ))
-    (pad 46 smd custom (at 25.4 0 90) (size 1.524 1.524) (layers F.Cu)
+    (pad 46 smd custom (at 25.4 0 90) (size 1 1) (layers F.Cu)
       (net 38 /MSW2) (zone_connect 0)
       (options (clearance outline) (anchor circle))
       (primitives
@@ -566,7 +566,7 @@
         (gr_poly (pts
            (xy 0.635 2.54) (xy 0 3.81) (xy -0.635 2.54)) (width 0.1))
       ))
-    (pad 44 smd custom (at 22.86 0 90) (size 1.524 1.524) (layers F.Cu)
+    (pad 44 smd custom (at 22.86 0 90) (size 1 1) (layers F.Cu)
       (net 39 /MSW1) (zone_connect 0)
       (options (clearance outline) (anchor circle))
       (primitives
@@ -575,7 +575,7 @@
         (gr_poly (pts
            (xy 0.635 2.54) (xy 0 3.81) (xy -0.635 2.54)) (width 0.1))
       ))
-    (pad 42 smd custom (at 20.32 0 90) (size 1.524 1.524) (layers F.Cu)
+    (pad 42 smd custom (at 20.32 0 90) (size 1 1) (layers F.Cu)
       (net 40 /CLK) (zone_connect 0)
       (options (clearance outline) (anchor circle))
       (primitives
@@ -584,7 +584,7 @@
         (gr_poly (pts
            (xy 0.635 2.54) (xy 0 3.81) (xy -0.635 2.54)) (width 0.1))
       ))
-    (pad 40 smd custom (at 17.78 0 90) (size 1.524 1.524) (layers F.Cu)
+    (pad 40 smd custom (at 17.78 0 90) (size 1 1) (layers F.Cu)
       (net 41 /D6) (zone_connect 0)
       (options (clearance outline) (anchor circle))
       (primitives
@@ -593,7 +593,7 @@
         (gr_poly (pts
            (xy 0.635 2.54) (xy 0 3.81) (xy -0.635 2.54)) (width 0.1))
       ))
-    (pad 38 smd custom (at 15.24 0 90) (size 1.524 1.524) (layers F.Cu)
+    (pad 38 smd custom (at 15.24 0 90) (size 1 1) (layers F.Cu)
       (net 42 /D4) (zone_connect 0)
       (options (clearance outline) (anchor circle))
       (primitives
@@ -602,7 +602,7 @@
         (gr_poly (pts
            (xy 0.635 2.54) (xy 0 3.81) (xy -0.635 2.54)) (width 0.1))
       ))
-    (pad 36 smd custom (at 12.7 0 90) (size 1.524 1.524) (layers F.Cu)
+    (pad 36 smd custom (at 12.7 0 90) (size 1 1) (layers F.Cu)
       (net 43 /D2) (zone_connect 0)
       (options (clearance outline) (anchor circle))
       (primitives
@@ -611,7 +611,7 @@
         (gr_poly (pts
            (xy 0.635 2.54) (xy 0 3.81) (xy -0.635 2.54)) (width 0.1))
       ))
-    (pad 34 smd custom (at 10.16 0 90) (size 1.524 1.524) (layers F.Cu)
+    (pad 34 smd custom (at 10.16 0 90) (size 1 1) (layers F.Cu)
       (net 44 /D0) (zone_connect 0)
       (options (clearance outline) (anchor circle))
       (primitives
@@ -620,7 +620,7 @@
         (gr_poly (pts
            (xy 0.635 2.54) (xy 0 3.81) (xy -0.635 2.54)) (width 0.1))
       ))
-    (pad 32 smd custom (at 7.62 0 90) (size 1.524 1.524) (layers F.Cu)
+    (pad 32 smd custom (at 7.62 0 90) (size 1 1) (layers F.Cu)
       (net 45 /A4) (zone_connect 0)
       (options (clearance outline) (anchor circle))
       (primitives
@@ -629,7 +629,7 @@
         (gr_poly (pts
            (xy 0.635 2.54) (xy 0 3.81) (xy -0.635 2.54)) (width 0.1))
       ))
-    (pad 30 smd custom (at 5.08 0 90) (size 1.524 1.524) (layers F.Cu)
+    (pad 30 smd custom (at 5.08 0 90) (size 1 1) (layers F.Cu)
       (net 46 /A2) (zone_connect 0)
       (options (clearance outline) (anchor circle))
       (primitives
@@ -638,7 +638,7 @@
         (gr_poly (pts
            (xy 0.635 2.54) (xy 0 3.81) (xy -0.635 2.54)) (width 0.1))
       ))
-    (pad 28 smd custom (at 2.54 0 90) (size 1.524 1.524) (layers F.Cu)
+    (pad 28 smd custom (at 2.54 0 90) (size 1 1) (layers F.Cu)
       (net 47 /A0) (zone_connect 0)
       (options (clearance outline) (anchor circle))
       (primitives
@@ -647,7 +647,7 @@
         (gr_poly (pts
            (xy 0.635 2.54) (xy 0 3.81) (xy -0.635 2.54)) (width 0.1))
       ))
-    (pad 26 smd custom (at 0 0 90) (size 1.524 1.524) (layers F.Cu)
+    (pad 26 smd custom (at 0 0 90) (size 1 1) (layers F.Cu)
       (net 48 /A13) (zone_connect 0)
       (options (clearance outline) (anchor circle))
       (primitives
@@ -658,8 +658,9 @@
       ))
   )
 
-  (gr_line (start 120.65 76.2) (end 127.635 76.2) (layer Edge.Cuts) (width 0.05))
-  (gr_line (start 120.65 140.335) (end 120.65 76.2) (layer Edge.Cuts) (width 0.05))
+  (gr_line (start 127.635 140.335) (end 128.27 140.335) (layer Edge.Cuts) (width 0.05))
+  (gr_line (start 120.65 76.835) (end 120.65 140.335) (layer Edge.Cuts) (width 0.05) (tstamp 5DDDF4E2))
+  (gr_line (start 120.65 76.835) (end 128.27 76.835) (layer Edge.Cuts) (width 0.05))
   (gr_line (start 127.635 140.335) (end 120.65 140.335) (layer Edge.Cuts) (width 0.05))
 
 )
