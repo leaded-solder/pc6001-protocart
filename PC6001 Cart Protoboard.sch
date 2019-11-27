@@ -158,8 +158,8 @@ L Connector:TestPoint -12V1
 U 1 1 5DDF0281
 P 6925 5650
 F 0 "-12V1" H 6983 5768 50  0000 L CNN
-F 1 "TestPoint" H 6983 5677 50  0000 L CNN
-F 2 "Protoboard:Strip_50" H 7125 5650 50  0001 C CNN
+F 1 "TestPoint" H 6983 5677 50  0001 L CNN
+F 2 "Protoboard:Strip_25" H 7125 5650 50  0001 C CNN
 F 3 "~" H 7125 5650 50  0001 C CNN
 	1    6925 5650
 	1    0    0    -1  
@@ -173,8 +173,8 @@ L Connector:TestPoint 12V1
 U 1 1 5DDF09D0
 P 6825 5450
 F 0 "12V1" H 6883 5568 50  0000 L CNN
-F 1 "TestPoint" H 6883 5477 50  0000 L CNN
-F 2 "Protoboard:Strip_50" H 7025 5450 50  0001 C CNN
+F 1 "TestPoint" H 6883 5477 50  0001 L CNN
+F 2 "Protoboard:Strip_25" H 7025 5450 50  0001 C CNN
 F 3 "~" H 7025 5450 50  0001 C CNN
 	1    6825 5450
 	1    0    0    -1  
@@ -190,8 +190,8 @@ L Connector:TestPoint 5V1
 U 1 1 5DDF1283
 P 5475 5450
 F 0 "5V1" H 5533 5568 50  0000 L CNN
-F 1 "TestPoint" H 5533 5477 50  0000 L CNN
-F 2 "Protoboard:Strip_50" H 5675 5450 50  0001 C CNN
+F 1 "TestPoint" H 5533 5477 50  0001 L CNN
+F 2 "Protoboard:Strip_25" H 5675 5450 50  0001 C CNN
 F 3 "~" H 5675 5450 50  0001 C CNN
 	1    5475 5450
 	1    0    0    -1  
@@ -207,8 +207,8 @@ L Connector:TestPoint -5V1
 U 1 1 5DDF1B7A
 P 5275 5675
 F 0 "-5V1" H 5333 5793 50  0000 L CNN
-F 1 "TestPoint" H 5333 5702 50  0000 L CNN
-F 2 "Protoboard:Strip_50" H 5475 5675 50  0001 C CNN
+F 1 "TestPoint" H 5333 5702 50  0001 L CNN
+F 2 "Protoboard:Strip_25" H 5475 5675 50  0001 C CNN
 F 3 "~" H 5475 5675 50  0001 C CNN
 	1    5275 5675
 	1    0    0    -1  
@@ -222,8 +222,8 @@ L Connector:TestPoint GND1
 U 1 1 5DDF2781
 P 5225 5000
 F 0 "GND1" H 5283 5118 50  0000 L CNN
-F 1 "TestPoint" H 5283 5027 50  0000 L CNN
-F 2 "Protoboard:Strip_50" H 5425 5000 50  0001 C CNN
+F 1 "TestPoint" H 5283 5027 50  0001 L CNN
+F 2 "Protoboard:Strip_25" H 5425 5000 50  0001 C CNN
 F 3 "~" H 5425 5000 50  0001 C CNN
 	1    5225 5000
 	1    0    0    -1  
@@ -349,8 +349,8 @@ L Connector:TestPoint GND2
 U 1 1 5DDE1672
 P 5025 5100
 F 0 "GND2" H 5083 5218 50  0000 L CNN
-F 1 "TestPoint" H 5083 5127 50  0000 L CNN
-F 2 "Protoboard:Strip_50" H 5225 5100 50  0001 C CNN
+F 1 "TestPoint" H 5083 5127 50  0001 L CNN
+F 2 "Protoboard:Strip_25" H 5225 5100 50  0001 C CNN
 F 3 "~" H 5225 5100 50  0001 C CNN
 	1    5025 5100
 	1    0    0    -1  
