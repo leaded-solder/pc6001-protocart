@@ -154,10 +154,10 @@ Wire Wire Line
 Wire Wire Line
 	5200 2900 5200 2875
 $Comp
-L Connector:TestPoint -12V
+L Connector:TestPoint -12V1
 U 1 1 5DDF0281
 P 6925 5650
-F 0 "-12V" H 6983 5768 50  0000 L CNN
+F 0 "-12V1" H 6983 5768 50  0000 L CNN
 F 1 "TestPoint" H 6983 5677 50  0000 L CNN
 F 2 "Protoboard:Strip_25_vert" H 7125 5650 50  0001 C CNN
 F 3 "~" H 7125 5650 50  0001 C CNN
@@ -169,10 +169,10 @@ Wire Wire Line
 Wire Wire Line
 	6400 5650 6400 5300
 $Comp
-L Connector:TestPoint 12V
+L Connector:TestPoint 12V1
 U 1 1 5DDF09D0
 P 6825 5450
-F 0 "12V" H 6883 5568 50  0000 L CNN
+F 0 "12V1" H 6883 5568 50  0000 L CNN
 F 1 "TestPoint" H 6883 5477 50  0000 L CNN
 F 2 "Protoboard:Strip_25_vert" H 7025 5450 50  0001 C CNN
 F 3 "~" H 7025 5450 50  0001 C CNN
@@ -186,10 +186,10 @@ Wire Wire Line
 Wire Wire Line
 	6425 5200 6400 5200
 $Comp
-L Connector:TestPoint 5V
+L Connector:TestPoint 5V1
 U 1 1 5DDF1283
 P 5475 5450
-F 0 "5V" H 5533 5568 50  0000 L CNN
+F 0 "5V1" H 5533 5568 50  0000 L CNN
 F 1 "TestPoint" H 5533 5477 50  0000 L CNN
 F 2 "Protoboard:Strip_25_vert" H 5675 5450 50  0001 C CNN
 F 3 "~" H 5675 5450 50  0001 C CNN
@@ -203,10 +203,10 @@ Wire Wire Line
 Wire Wire Line
 	5750 5450 5475 5450
 $Comp
-L Connector:TestPoint -5V
+L Connector:TestPoint -5V1
 U 1 1 5DDF1B7A
 P 5275 5675
-F 0 "-5V" H 5333 5793 50  0000 L CNN
+F 0 "-5V1" H 5333 5793 50  0000 L CNN
 F 1 "TestPoint" H 5333 5702 50  0000 L CNN
 F 2 "Protoboard:Strip_25_vert" H 5475 5675 50  0001 C CNN
 F 3 "~" H 5475 5675 50  0001 C CNN
@@ -218,10 +218,10 @@ Wire Wire Line
 Wire Wire Line
 	5900 5675 5275 5675
 $Comp
-L Connector:TestPoint GND
+L Connector:TestPoint GND1
 U 1 1 5DDF2781
 P 5225 5000
-F 0 "GND" H 5283 5118 50  0000 L CNN
+F 0 "GND1" H 5283 5118 50  0000 L CNN
 F 1 "TestPoint" H 5283 5027 50  0000 L CNN
 F 2 "Protoboard:Strip_25_vert" H 5425 5000 50  0001 C CNN
 F 3 "~" H 5425 5000 50  0001 C CNN
@@ -230,4 +230,118 @@ F 3 "~" H 5425 5000 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	5900 5000 5225 5000
+$Comp
+L Connector:TestPoint MSW2
+U 1 1 5DDF6D1E
+P 7300 5100
+F 0 "MSW2" H 7358 5218 50  0000 L CNN
+F 1 "TestPoint" H 7358 5127 50  0000 L CNN
+F 2 "Protoboard:Proto_1" H 7500 5100 50  0001 C CNN
+F 3 "~" H 7500 5100 50  0001 C CNN
+	1    7300 5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint MSW1
+U 1 1 5DDF7309
+P 7225 4975
+F 0 "MSW1" H 7283 5093 50  0000 L CNN
+F 1 "TestPoint" H 7283 5002 50  0000 L CNN
+F 2 "Protoboard:Proto_1" H 7425 4975 50  0001 C CNN
+F 3 "~" H 7425 4975 50  0001 C CNN
+	1    7225 4975
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7300 5100 6400 5100
+Wire Wire Line
+	6400 5000 7225 5000
+Wire Wire Line
+	7225 5000 7225 4975
+$Comp
+L Connector:TestPoint D7
+U 1 1 5DDF9163
+P 5100 4800
+F 0 "D7" H 5158 4918 50  0000 L CNN
+F 1 "TestPoint" H 5158 4827 50  0000 L CNN
+F 2 "Protoboard:Proto_1_Odd" H 5300 4800 50  0001 C CNN
+F 3 "~" H 5300 4800 50  0001 C CNN
+	1    5100 4800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5100 4800 5900 4800
+$Comp
+L Connector:TestPoint CLK1
+U 1 1 5DDFBA79
+P 7125 4875
+F 0 "CLK1" H 7183 4993 50  0000 L CNN
+F 1 "TestPoint" H 7183 4902 50  0000 L CNN
+F 2 "Protoboard:Proto_1" H 7325 4875 50  0001 C CNN
+F 3 "~" H 7325 4875 50  0001 C CNN
+	1    7125 4875
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7125 4875 6400 4875
+Wire Wire Line
+	6400 4875 6400 4900
+$Comp
+L Connector:TestPoint D6
+U 1 1 5DDFC92C
+P 7025 4775
+F 0 "D6" H 7083 4893 50  0000 L CNN
+F 1 "TestPoint" H 7083 4802 50  0000 L CNN
+F 2 "Protoboard:Proto_1" H 7225 4775 50  0001 C CNN
+F 3 "~" H 7225 4775 50  0001 C CNN
+	1    7025 4775
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7025 4775 6400 4775
+Wire Wire Line
+	6400 4775 6400 4800
+$Comp
+L Connector:TestPoint D4
+U 1 1 5DDFE930
+P 7600 4700
+F 0 "D4" H 7658 4818 50  0000 L CNN
+F 1 "TestPoint" H 7658 4727 50  0000 L CNN
+F 2 "Protoboard:Proto_1" H 7800 4700 50  0001 C CNN
+F 3 "~" H 7800 4700 50  0001 C CNN
+	1    7600 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint D2
+U 1 1 5DE00472
+P 7525 4625
+F 0 "D2" H 7583 4743 50  0000 L CNN
+F 1 "TestPoint" H 7583 4652 50  0000 L CNN
+F 2 "Protoboard:Proto_1" H 7725 4625 50  0001 C CNN
+F 3 "~" H 7725 4625 50  0001 C CNN
+	1    7525 4625
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint D0
+U 1 1 5DE0095B
+P 7450 4550
+F 0 "D0" H 7508 4668 50  0000 L CNN
+F 1 "TestPoint" H 7508 4577 50  0000 L CNN
+F 2 "Protoboard:Proto_1" H 7650 4550 50  0001 C CNN
+F 3 "~" H 7650 4550 50  0001 C CNN
+	1    7450 4550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7600 4700 6400 4700
+Wire Wire Line
+	6400 4600 7525 4600
+Wire Wire Line
+	7525 4600 7525 4625
+Wire Wire Line
+	7450 4550 6400 4550
+Wire Wire Line
+	6400 4550 6400 4500
 $EndSCHEMATC
