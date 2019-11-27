@@ -1,0 +1,20 @@
+NEC PC-6001 Canyon Climber Cartridge
+
+width 3.296"
+length 4.320"
+thickness 0.797"
+
+pcb width 2.870"
+pcb length 3.559" (no fingers)
+pcb length 4.031" (with fingers)
+pcb thickness 0.065" (1.6mm)
+pcb fingers width 2.571
+
+fingers pitch 0.100"
+fingers width 0.070"
+fingers thickness pcb only (no metal fingers) .059"
+fingers thickness with fingers on both sides measured 0.066 - each finger may be 0.0035" thick.
+
+there is one hole that lines up with the cartridge case - it is in the middle of the width (1.435" from each edge of pcb).
+hole is 0.323" diameter
+hole is also 0.880" from edge of fingers to its center.
