@@ -8,11 +8,11 @@ pcb width 2.870"
 pcb length 3.559" (no fingers)
 pcb length 4.031" (with fingers)
 pcb thickness 0.065" (1.6mm)
-pcb fingers width 2.571
+pcb fingers width 2.571 (65.3mm)
 
-fingers pitch 0.100"
-fingers width 0.070"
-fingers thickness pcb only (no metal fingers) .059"
+fingers pitch 0.100" (2.54mm)
+fingers width 0.070" (1.78mm)
+fingers thickness pcb only (no metal fingers) .059" (1.5mm)
 fingers thickness with fingers on both sides measured 0.066 - each finger may be 0.0035" thick.
 
 there is one hole that lines up with the cartridge case - it is in the middle of the width (1.435" from each edge of pcb).
