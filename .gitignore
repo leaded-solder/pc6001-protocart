@@ -1,4 +1,5 @@
 *.sch-bak
+pc6001-romram-v*
 *.zip
 plot
 *.kicad_pcb-bak
