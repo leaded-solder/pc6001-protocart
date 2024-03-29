@@ -1,4 +1,5 @@
 *.sch-bak
+*.lck
 pc6001-romram-v*
 *.zip
 plot
