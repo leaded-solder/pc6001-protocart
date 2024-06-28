@@ -91,7 +91,7 @@
     (options (clearance outline) (anchor circle))
     (primitives
       (gr_poly (pts
-         (xy -0.885 -1.84) (xy -0.885 7.46) (xy 0.885 7.46) (xy 0.885 -1.84)) (width 0.1))
+         (xy -0.885 -1.50) (xy -0.885 7.46) (xy 0.885 7.46) (xy 0.885 -1.50)) (width 0.1))
       (gr_poly (pts
          (xy 0.885 7.46) (xy 0 8.73) (xy -0.885 7.46)) (width 0.1))
     ))
