@@ -14,6 +14,19 @@ TOP_LIP_EXCURSION = 7.25;
 // the thickness of the walls
 WALL_WIDTH = 3;
 
+// Space from the top-outside of the case to the top of the PCB
+PCB_OFFSET_TOP = 11;
+// Space from the bottom-outside of the case to the bottom of the PCB
+PCB_OFFSET_BOTTOM = 6;
+// Thickness of a cartridge PCB at the mounting holes
+PCB_THICKNESS = 1.7;
+// PCB hole size (M3 = 3)
+PCB_HOLE_SIZE = 3.00;
+// PCB support size (must be bigger than PCB_HOLE_SIZE)
+PCB_STANDOFF_SIZE = 5.00;
+// Height of the stud going through the PCB (must be more than PCB_THICKNESS)
+PCB_STUD_HEIGHT = 5.5;
+
 module inner_cut($cut_height) {
     // The inner section cut out of the cartridge (to hold the PCB inside)
     cube([OVERALL_WIDTH - WALL_WIDTH, (OVERALL_LENGTH -     TOP_LIP_EXCURSION) - WALL_WIDTH, $cut_height], center = true);
@@ -82,11 +95,32 @@ cube([OVERALL_WIDTH, OVERALL_LENGTH, RIB_HEIGHT], center = true);
                     convexity=20
                 );*/
             }
+            
+            translate([0, TOP_LIP_EXCURSION, -_lip_z - PCB_OFFSET_TOP/2 + PCB_THICKNESS])
+            pcb_support_top();
         }
         
         // sticker recess
         translate([0,6.5,_lip_z + 1.5]) {
             cube([63, 68.5, 1.5], center = true);
+        }
+    }
+}
+
+module pcb_support_top() {
+    // Bottom has a mounting stud with a hole in it
+    difference() {
+        cylinder(PCB_OFFSET_TOP, d = PCB_STANDOFF_SIZE, center = true);
+        cylinder(PCB_STUD_HEIGHT * 2, d = PCB_HOLE_SIZE, center=true, $fn = 10);
+    }
+}
+
+module pcb_support_bottom() {
+    // Bottom has a mounting stud with a pin in it
+    union() {
+        cylinder(PCB_OFFSET_BOTTOM, d = PCB_STANDOFF_SIZE, center = true);
+        translate([0, 0, PCB_STUD_HEIGHT]) {
+            cylinder(PCB_STUD_HEIGHT, d = PCB_HOLE_SIZE, center=true, $fn = 10);
         }
     }
 }
@@ -104,6 +138,11 @@ if("bottom" == DRAW_WHICH || "both" == DRAW_WHICH) {
                 inner_cut(BOT_HEIGHT);
             }
         }        
+        
+        // check my math on this one, but i think it's not in the wall far enough
+        translate([0, 0, -(WALL_WIDTH - PCB_OFFSET_BOTTOM/2)]) {
+            pcb_support_bottom();
+        }
     }        
 }
 
