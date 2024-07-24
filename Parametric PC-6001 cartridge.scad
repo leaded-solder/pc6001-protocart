@@ -2,8 +2,10 @@
 OVERALL_LENGTH = 100;
 OVERALL_WIDTH = 83.75;
 
+RIB_HEIGHT = 4;
+
 // base top of the cartridge
-cube([OVERALL_WIDTH, OVERALL_LENGTH, 4], center = true);
+cube([OVERALL_WIDTH, OVERALL_LENGTH, RIB_HEIGHT], center = true);
 
 // lip on side of cartridge (in 7.25mm, down 8mm)
 TOP_LIP_Z = 8;
@@ -27,25 +29,22 @@ translate([0, TOP_LIP_EXCURSION, -TOP_LIP_Z/2]){
 
 difference() {
     // topmost "pyramid" top of the cartridge
-    _lip_z = 3;
+    _lip_z = RIB_HEIGHT;
     translate([0, 0, _lip_z]) {
         translate([0,0,0]) {
             _incursion = 11;
-            _width = OVERALL_WIDTH - _incursion;
-            _length = OVERALL_LENGTH - _incursion;
-            
-            _bottom_width = _width + _incursion;
-            _bottom_length = _length + _incursion;
+            _top_width = OVERALL_WIDTH - _incursion;
+            _top_length = OVERALL_LENGTH - _incursion;
             
             // smoothly go down
             
-            _pyr_scale_w = (OVERALL_WIDTH - _incursion)/OVERALL_WIDTH;
-            _pyr_scale_l = (OVERALL_LENGTH - _incursion)/OVERALL_LENGTH;
+            _pyr_scale_w = _top_width / OVERALL_WIDTH;
+            _pyr_scale_l = _top_length / OVERALL_LENGTH;
 
             _pyramid_scale = [ _pyr_scale_w, _pyr_scale_l ]; 
             
             linear_extrude(height = _lip_z, center = true, scale = _pyramid_scale)
-                square([_bottom_width, _bottom_length], center = true);
+                square([OVERALL_WIDTH, OVERALL_LENGTH], center = true);
             
             /*polyhedron(
                 points = [
