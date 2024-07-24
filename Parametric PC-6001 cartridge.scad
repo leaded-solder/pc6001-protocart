@@ -106,8 +106,14 @@ cube([OVERALL_WIDTH, OVERALL_LENGTH, RIB_HEIGHT], center = true);
             
             // get it into the right space for the bottom
             translate([0, TOP_LIP_EXCURSION, -_lip_z - PCB_OFFSET_TOP/2 + PCB_THICKNESS]) {
-                // translate top supports from here
-                pcb_support_top();
+                for(v = STUD_LOCATIONS) {
+                    // translate the lip offset?
+                    translate([0, -(TOP_LIP_EXCURSION + OVERALL_LENGTH/2), 0]) {
+                        translate(v) {
+                            pcb_support_bottom();
+                        }
+                    }
+                }
             }
         }
         
@@ -157,7 +163,6 @@ if("bottom" == DRAW_WHICH || "both" == DRAW_WHICH) {
                 translate([0, -(TOP_LIP_EXCURSION + OVERALL_LENGTH/2), 0]) {
                     translate(v) {
                         pcb_support_bottom();
-                        // only did two? that's weird
                     }
                 }
             }
