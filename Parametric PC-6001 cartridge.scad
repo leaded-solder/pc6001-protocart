@@ -25,6 +25,8 @@ translate([0, TOP_LIP_EXCURSION, -TOP_LIP_Z/2]){
                 cube([OVERALL_WIDTH - WALL_WIDTH, (OVERALL_LENGTH - TOP_LIP_EXCURSION) - WALL_WIDTH, TOP_LIP_Z], center = true);
         }
     }
+    
+    // TODO: Side greebles
 }
 
 difference() {
@@ -80,3 +82,6 @@ difference() {
         cube([63, 68.5, 1.5], center = true);
     }
 }
+
+// TODO: Entire bottom half (with #defines)
+// TODO: Screw holes to mount PCB (ROMRAM is 97.7 mm long, its mounting holes are ridiculous)
