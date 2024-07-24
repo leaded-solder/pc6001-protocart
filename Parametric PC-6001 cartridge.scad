@@ -1,5 +1,5 @@
 // the overall length of the cartridge (make longer for more stuff, like a PC-6006 does)
-OVERALL_LENGTH = 100;
+OVERALL_LENGTH = 110;
 OVERALL_WIDTH = 83.75;
 
 RIB_HEIGHT = 4;
