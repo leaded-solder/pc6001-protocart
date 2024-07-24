@@ -130,6 +130,8 @@ module pcb_support_top() {
         cylinder(PCB_OFFSET_TOP, d = PCB_STANDOFF_SIZE, center = true);
         cylinder(PCB_STUD_HEIGHT * 10, d = PCB_HOLE_SIZE, center=true, $fn = 10);
     }
+    
+    // TODO: add flag for left/right/top/bottom supports?
 }
 
 module pcb_support_bottom() {
@@ -140,6 +142,8 @@ module pcb_support_bottom() {
             cylinder(PCB_STUD_HEIGHT, d = PCB_HOLE_SIZE, center=true, $fn = 10);
         }
     }
+    
+    // TODO: add flag for left/right/top/bottom supports?
 }
 
 if("bottom" == DRAW_WHICH || "both" == DRAW_WHICH) {
