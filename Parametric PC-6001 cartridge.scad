@@ -110,7 +110,7 @@ cube([OVERALL_WIDTH, OVERALL_LENGTH, RIB_HEIGHT], center = true);
                     // translate the lip offset?
                     translate([0, -(TOP_LIP_EXCURSION + OVERALL_LENGTH/2), 0]) {
                         translate(v) {
-                            pcb_support_bottom();
+                            pcb_support_top();
                         }
                     }
                 }
@@ -128,7 +128,7 @@ module pcb_support_top() {
     // Bottom has a mounting stud with a hole in it
     difference() {
         cylinder(PCB_OFFSET_TOP, d = PCB_STANDOFF_SIZE, center = true);
-        cylinder(PCB_STUD_HEIGHT * 2, d = PCB_HOLE_SIZE, center=true, $fn = 10);
+        cylinder(PCB_STUD_HEIGHT * 10, d = PCB_HOLE_SIZE, center=true, $fn = 10);
     }
 }
 
