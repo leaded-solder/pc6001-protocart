@@ -14,6 +14,11 @@ TOP_LIP_EXCURSION = 7.25;
 // the thickness of the walls
 WALL_WIDTH = 3;
 
+module inner_cut($cut_height) {
+    // The inner section cut out of the cartridge (to hold the PCB inside)
+    cube([OVERALL_WIDTH - WALL_WIDTH, (OVERALL_LENGTH -     TOP_LIP_EXCURSION) - WALL_WIDTH, $cut_height], center = true);
+}
+
 if("top" == DRAW_WHICH || "both" == DRAW_WHICH) {
     // base top of the cartridge
 cube([OVERALL_WIDTH, OVERALL_LENGTH, RIB_HEIGHT], center = true);
@@ -23,10 +28,8 @@ cube([OVERALL_WIDTH, OVERALL_LENGTH, RIB_HEIGHT], center = true);
             // the "meat" of the walls
             cube([OVERALL_WIDTH, OVERALL_LENGTH - TOP_LIP_EXCURSION * 2, TOP_LIP_Z], center = true);
             
-            // The inner section cut out of the cartridge (to hold the PCB inside)
-            translate([0, -WALL_WIDTH, 0]) {
-                // move down so the 'top' lip remains
-                    cube([OVERALL_WIDTH - WALL_WIDTH, (OVERALL_LENGTH - TOP_LIP_EXCURSION) - WALL_WIDTH, TOP_LIP_Z], center = true);
+            translate([0, -WALL_WIDTH, 0]) {                 // move down so the 'top' lip remains
+                inner_cut(TOP_LIP_Z);
             }
         }
         
@@ -89,6 +92,19 @@ cube([OVERALL_WIDTH, OVERALL_LENGTH, RIB_HEIGHT], center = true);
 }
 
 if("bottom" == DRAW_WHICH || "both" == DRAW_WHICH) {
+    BOT_LENGTH = OVERALL_LENGTH - (TOP_LIP_EXCURSION * 2);
+    BOT_HEIGHT = 11;
+    BOT_OFFSET = TOP_LIP_EXCURSION;
+    
+    translate([0, BOT_OFFSET, (-BOT_HEIGHT / 2) - TOP_LIP_Z]) {
+        difference() {
+            cube([OVERALL_WIDTH, BOT_LENGTH, BOT_HEIGHT], center = true);
+            
+            translate([0,-WALL_WIDTH,WALL_WIDTH]) {
+                inner_cut(BOT_HEIGHT);
+            }
+        }        
+    }        
 }
 
 // TODO: Entire bottom half (with #defines)
