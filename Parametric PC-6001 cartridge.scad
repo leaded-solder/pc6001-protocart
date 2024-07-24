@@ -27,6 +27,14 @@ PCB_STANDOFF_SIZE = 5.00;
 // Height of the stud going through the PCB (must be more than PCB_THICKNESS)
 PCB_STUD_HEIGHT = 5.5;
 
+// Relative to the outer lip of the cartridge, dead centre X
+STUD_LOCATIONS = [
+    [ -36.441, 94.234 ],
+    [ 36.965, 94.234 ],
+    [ 36.965, 24.638 ],
+    [ -36.441, 24.638 ],
+];
+
 module inner_cut($cut_height) {
     // The inner section cut out of the cartridge (to hold the PCB inside)
     cube([OVERALL_WIDTH - WALL_WIDTH, (OVERALL_LENGTH -     TOP_LIP_EXCURSION) - WALL_WIDTH, $cut_height], center = true);
@@ -96,8 +104,11 @@ cube([OVERALL_WIDTH, OVERALL_LENGTH, RIB_HEIGHT], center = true);
                 );*/
             }
             
-            translate([0, TOP_LIP_EXCURSION, -_lip_z - PCB_OFFSET_TOP/2 + PCB_THICKNESS])
-            pcb_support_top();
+            // get it into the right space for the bottom
+            translate([0, TOP_LIP_EXCURSION, -_lip_z - PCB_OFFSET_TOP/2 + PCB_THICKNESS]) {
+                // translate top supports from here
+                pcb_support_top();
+            }
         }
         
         // sticker recess
@@ -141,7 +152,15 @@ if("bottom" == DRAW_WHICH || "both" == DRAW_WHICH) {
         
         // check my math on this one, but i think it's not in the wall far enough
         translate([0, 0, -(WALL_WIDTH - PCB_OFFSET_BOTTOM/2)]) {
-            pcb_support_bottom();
+            for(v = STUD_LOCATIONS) {
+                // translate the lip offset?
+                translate([0, -(TOP_LIP_EXCURSION + OVERALL_LENGTH/2), 0]) {
+                    translate(v) {
+                        pcb_support_bottom();
+                        // only did two? that's weird
+                    }
+                }
+            }
         }
     }        
 }
