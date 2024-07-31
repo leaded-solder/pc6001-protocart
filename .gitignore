@@ -1,4 +1,6 @@
 *.sch-bak
+*autosave*
+*auto_save*
 *.lck
 pc6001-romram-v*
 *.zip
