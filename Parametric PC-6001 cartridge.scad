@@ -5,7 +5,7 @@ OVERALL_WIDTH = 83.75;
 RIB_HEIGHT = 4;
 
 // What part of the shell to render
-DRAW_WHICH = "top"; // [ "top", "bottom", "both" ]
+DRAW_WHICH = "both"; // [ "top", "bottom", "both" ]
 
 // lip on side of cartridge (in 7.25mm, down 8mm)
 TOP_LIP_Z = 8;
@@ -151,12 +151,32 @@ if("bottom" == DRAW_WHICH || "both" == DRAW_WHICH) {
     BOT_HEIGHT = 11;
     BOT_OFFSET = TOP_LIP_EXCURSION;
     
+    CHAMFER_DEPTH = 3;
+
     translate([0, BOT_OFFSET, (-BOT_HEIGHT / 2) - TOP_LIP_Z]) {
         difference() {
+            // lower wall meat
             cube([OVERALL_WIDTH, BOT_LENGTH, BOT_HEIGHT], center = true);
             
             translate([0,-WALL_WIDTH,WALL_WIDTH]) {
                 inner_cut(BOT_HEIGHT);
+            }
+            
+            translate([-OVERALL_WIDTH/2, (OVERALL_LENGTH - CHAMFER_DEPTH)/2 -5, -(BOT_HEIGHT+CHAMFER_DEPTH)/2 - 0.8]) {
+                rotate([45,0,0]) {
+                    cube([OVERALL_WIDTH, CHAMFER_DEPTH, CHAMFER_DEPTH]);
+                }
+            }
+            
+            // Side chamfers
+            translate([(OVERALL_WIDTH-CHAMFER_DEPTH)/2, -OVERALL_LENGTH/2, -BOT_HEIGHT/2]) {
+                rotate([0,45,0])
+                    cube([CHAMFER_DEPTH, OVERALL_LENGTH, CHAMFER_DEPTH]);
+            }
+            
+            translate([-(OVERALL_WIDTH+CHAMFER_DEPTH)/2 -1, -OVERALL_LENGTH/2, -BOT_HEIGHT/2]) {
+                rotate([0,45,0])
+                    cube([CHAMFER_DEPTH, OVERALL_LENGTH, CHAMFER_DEPTH]);
             }
         }        
         
