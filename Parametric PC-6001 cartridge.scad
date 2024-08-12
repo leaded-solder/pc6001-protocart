@@ -148,7 +148,7 @@ module pcb_support_bottom() {
 
 if("bottom" == DRAW_WHICH || "both" == DRAW_WHICH) {
     BOT_LENGTH = OVERALL_LENGTH - (TOP_LIP_EXCURSION * 2);
-    BOT_HEIGHT = 11;
+    BOT_HEIGHT = 9.5;
     BOT_OFFSET = TOP_LIP_EXCURSION;
     
     CHAMFER_DEPTH = 3;
@@ -181,7 +181,7 @@ if("bottom" == DRAW_WHICH || "both" == DRAW_WHICH) {
         }        
         
         // check my math on this one, but i think it's not in the wall far enough
-        translate([0, 0, -(WALL_WIDTH - PCB_OFFSET_BOTTOM/2)]) {
+        translate([0, 0, -(WALL_WIDTH - PCB_OFFSET_BOTTOM/2 + PCB_THICKNESS)]) {
             for(v = STUD_LOCATIONS) {
                 // translate the lip offset?
                 translate([0, -(TOP_LIP_EXCURSION + OVERALL_LENGTH/2), 0]) {
