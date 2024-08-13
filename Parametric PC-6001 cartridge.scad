@@ -42,7 +42,10 @@ module inner_cut($cut_height) {
 
 if("top" == DRAW_WHICH || "both" == DRAW_WHICH) {
     // base top of the cartridge
-cube([OVERALL_WIDTH, OVERALL_LENGTH, RIB_HEIGHT], center = true);
+    difference() {
+        cube([OVERALL_WIDTH, OVERALL_LENGTH, RIB_HEIGHT], center = true);
+        cube([OVERALL_WIDTH - WALL_WIDTH * 2, OVERALL_LENGTH - WALL_WIDTH * 2, RIB_HEIGHT * 10], center = true);
+    }
     
     translate([0, TOP_LIP_EXCURSION, -TOP_LIP_Z/2]){
         difference() {
