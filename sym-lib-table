@@ -1,0 +1,4 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "UltimatePico")(type "KiCad")(uri "${KIPRJMOD}/UltimatePico.kicad_sym")(options "")(descr ""))
+)
