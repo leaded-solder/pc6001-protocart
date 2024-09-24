@@ -3,4 +3,5 @@
   (lib (name "PC6001 Edge Connector")(type "KiCad")(uri "${KIPRJMOD}/PC6001 Edge Connector.pretty")(options "")(descr ""))
   (lib (name "Protoboard")(type "KiCad")(uri "${KIPRJMOD}/Protoboard.pretty")(options "")(descr ""))
   (lib (name "UltimatePico")(type "KiCad")(uri "${KIPRJMOD}/UltimatePico.pretty")(options "")(descr ""))
+  (lib (name "Espressif")(type "KiCad")(uri "${KIPRJMOD}/Espressif/Espressif.pretty")(options "")(descr ""))
 )
