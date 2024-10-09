@@ -2,4 +2,5 @@
   (version 7)
   (lib (name "UltimatePico")(type "KiCad")(uri "${KIPRJMOD}/UltimatePico.kicad_sym")(options "")(descr ""))
   (lib (name "Espressif")(type "KiCad")(uri "${KIPRJMOD}/Espressif/Espressif.kicad_sym")(options "")(descr ""))
+  (lib (name "microSD_Breakout")(type "Legacy")(uri "${KIPRJMOD}/microSD_Breakout.lib")(options "")(descr ""))
 )

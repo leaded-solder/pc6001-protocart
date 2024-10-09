@@ -4,4 +4,5 @@
   (lib (name "Protoboard")(type "KiCad")(uri "${KIPRJMOD}/Protoboard.pretty")(options "")(descr ""))
   (lib (name "UltimatePico")(type "KiCad")(uri "${KIPRJMOD}/UltimatePico.pretty")(options "")(descr ""))
   (lib (name "Espressif")(type "KiCad")(uri "${KIPRJMOD}/Espressif/Espressif.pretty")(options "")(descr ""))
+  (lib (name "microSD_Breakout")(type "KiCad")(uri "${KIPRJMOD}/microSD_Breakout.pretty")(options "")(descr ""))
 )
