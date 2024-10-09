@@ -5849,6 +5849,12 @@
 		(uuid "d6a3a6f9-a1e0-4647-a784-9e2d24085c73")
 	)
 	(junction
+		(at 64.135 78.74)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "df666383-3b54-4053-bc40-5ee33d174df1")
+	)
+	(junction
 		(at 45.085 134.62)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -5941,6 +5947,16 @@
 			(type default)
 		)
 		(uuid "0ff9f6dd-fa6e-4a20-9818-43088e8e1f93")
+	)
+	(wire
+		(pts
+			(xy 64.135 78.74) (xy 66.04 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1ccc26bf-b604-4582-a59c-cdfe9b16f71b")
 	)
 	(wire
 		(pts
@@ -6051,6 +6067,16 @@
 			(type default)
 		)
 		(uuid "4eb86721-f9e4-4ed8-97db-25a921f63538")
+	)
+	(wire
+		(pts
+			(xy 63.5 78.74) (xy 64.135 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4fc11aa7-d427-465d-a73f-ff2ecb72829d")
 	)
 	(wire
 		(pts
@@ -6354,16 +6380,6 @@
 	)
 	(wire
 		(pts
-			(xy 63.5 78.74) (xy 64.135 78.74)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d831d26b-853c-4bbb-883f-1c7c294c36af")
-	)
-	(wire
-		(pts
 			(xy 45.085 134.62) (xy 51.435 134.62)
 		)
 		(stroke
@@ -6494,16 +6510,6 @@
 		)
 		(uuid "7440fda2-3553-4315-a013-e9b4fe4f2237")
 	)
-	(text "TODO: ESP reset"
-		(exclude_from_sim no)
-		(at 57.658 153.924 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "767016c6-db4d-4991-8ea0-f1f8783142fd")
-	)
 	(text "TODO: RAM signals"
 		(exclude_from_sim no)
 		(at 81.788 121.412 0)
@@ -6534,16 +6540,6 @@
 			)
 		)
 		(uuid "c84d047d-0ceb-448a-b411-46613696937c")
-	)
-	(text "TODO: Maybe ESP_RST can be put into a latch?"
-		(exclude_from_sim no)
-		(at 57.404 156.718 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "ef7823bf-d14b-4f95-a2e6-a024053e0763")
 	)
 	(text "TODO: add power diodes"
 		(exclude_from_sim no)
@@ -7028,6 +7024,17 @@
 		)
 		(uuid "5bea63b8-ffaf-4f72-953a-7db0fc203442")
 	)
+	(label "~{CS3}"
+		(at 66.04 78.74 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "5c3a5abd-ab03-4ebe-85b6-6827518b7800")
+	)
 	(label "a14"
 		(at 100.33 111.76 180)
 		(fields_autoplaced yes)
@@ -7038,6 +7045,17 @@
 			(justify right bottom)
 		)
 		(uuid "61986576-9656-4119-9910-f6bc5f14e6e5")
+	)
+	(label "~{CAS}"
+		(at 20.32 179.07 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "62114d6d-f225-4a84-b86f-071d245cacbe")
 	)
 	(label "a3"
 		(at 100.33 83.82 180)
@@ -7093,6 +7111,17 @@
 			(justify left bottom)
 		)
 		(uuid "746495f2-60cf-4782-a798-8307a313fcd4")
+	)
+	(label "~{RAMSEL}"
+		(at 35.56 181.61 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "7e9051b8-ddcd-4a47-bf0e-2c3a9617bf5b")
 	)
 	(label "a13"
 		(at 64.135 109.22 0)
@@ -7248,6 +7277,17 @@
 		)
 		(uuid "969eb4c4-38af-4d22-84cf-0810ac0ca97f")
 	)
+	(label "~{RAS}"
+		(at 20.32 184.15 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "973d4723-d45d-4f72-b912-8034b84c2c96")
+	)
 	(label "a10"
 		(at 64.135 101.6 0)
 		(fields_autoplaced yes)
@@ -7302,17 +7342,6 @@
 			(justify right bottom)
 		)
 		(uuid "a68ee69f-75c0-4cbf-afed-de043c204a87")
-	)
-	(label "~{CS3}"
-		(at 64.135 78.74 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "b4bc2057-2025-4823-89ec-451357d10f0b")
 	)
 	(label "d6"
 		(at 64.135 127 0)
@@ -8783,6 +8812,110 @@
 				(path "/43e41326-819e-40e7-9c3a-9c7b5d01c509"
 					(reference "SW1")
 					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "74xx:74LS32")
+		(at 27.94 181.61 0)
+		(unit 2)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "66e55cb6-3aa6-4e59-abf1-4fc2f9b21d32")
+		(property "Reference" "U3"
+			(at 27.94 172.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "74LS32"
+			(at 27.94 175.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 27.94 181.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.ti.com/lit/gpn/sn74LS32"
+			(at 27.94 181.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Quad 2-input OR"
+			(at 27.94 181.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "6"
+			(uuid "371c0e5a-1135-40ff-a02f-4266d73b99d7")
+		)
+		(pin "11"
+			(uuid "3b65b751-3899-460c-bb23-bac5dd16c31c")
+		)
+		(pin "1"
+			(uuid "466e3ca4-616c-4d7b-968e-a4feee96fd58")
+		)
+		(pin "13"
+			(uuid "cde8d776-114f-49d4-ad84-225ac3d28eb6")
+		)
+		(pin "10"
+			(uuid "80462d76-e83d-4588-ac01-7f1521d1f511")
+		)
+		(pin "2"
+			(uuid "3494e523-2277-4726-aba8-3fdc4276ad0c")
+		)
+		(pin "9"
+			(uuid "e14b85f6-8170-45ad-94f7-6f65cc19b15b")
+		)
+		(pin "8"
+			(uuid "cc5ef692-29fc-42bc-add4-f0862a270c82")
+		)
+		(pin "7"
+			(uuid "d9714834-80cb-4593-b02e-2832998f9ea7")
+		)
+		(pin "5"
+			(uuid "e3410bff-9833-4ebb-bafb-49d513d61c16")
+		)
+		(pin "12"
+			(uuid "d0696315-ce39-4dda-bb49-7f931e3bfa9f")
+		)
+		(pin "3"
+			(uuid "251bcc06-80b7-40b3-a8d6-4132977a22c6")
+		)
+		(pin "14"
+			(uuid "1c2be204-7ea0-4ada-98ae-c32b0ccb4559")
+		)
+		(pin "4"
+			(uuid "23ec92dc-772e-42c1-a32d-484d7bc5e184")
+		)
+		(instances
+			(project ""
+				(path "/43e41326-819e-40e7-9c3a-9c7b5d01c509"
+					(reference "U3")
+					(unit 2)
 				)
 			)
 		)
