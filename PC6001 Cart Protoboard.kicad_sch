@@ -6510,7 +6510,7 @@
 		)
 		(uuid "7440fda2-3553-4315-a013-e9b4fe4f2237")
 	)
-	(text "TODO: RAM signals"
+	(text "TODO: RAM read/write"
 		(exclude_from_sim no)
 		(at 81.788 121.412 0)
 		(effects
@@ -7046,7 +7046,7 @@
 		)
 		(uuid "61986576-9656-4119-9910-f6bc5f14e6e5")
 	)
-	(label "~{CAS}"
+	(label "~{EXCAS}"
 		(at 20.32 179.07 180)
 		(fields_autoplaced yes)
 		(effects
