@@ -6510,6 +6510,17 @@
 		)
 		(uuid "7440fda2-3553-4315-a013-e9b4fe4f2237")
 	)
+	(text "temporary place for sram,\nwill probably get dumped in\nfuture rev"
+		(exclude_from_sim no)
+		(at 126.238 93.98 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "77eca255-9b2d-4922-a04a-6032fa380244")
+	)
 	(text "TODO: RAM read/write"
 		(exclude_from_sim no)
 		(at 81.788 121.412 0)
@@ -6826,6 +6837,17 @@
 		)
 		(uuid "23157566-14c7-4c6f-90b4-f593086ea85b")
 	)
+	(label "~{DRD2}"
+		(at 158.75 90.17 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "23bbb9a5-ad4f-4db4-8f28-5a45076102db")
+	)
 	(label "a15"
 		(at 100.33 114.3 180)
 		(fields_autoplaced yes)
@@ -6858,6 +6880,17 @@
 			(justify right bottom)
 		)
 		(uuid "2ca1a9dc-5176-4be1-bba2-bac9c7e6f328")
+	)
+	(label "~{WR}"
+		(at 158.75 92.71 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "3406a845-cc96-4c11-a05a-0009b15b9a1f")
 	)
 	(label "d3"
 		(at 100.33 127 180)
