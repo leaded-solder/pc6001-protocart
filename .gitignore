@@ -1,4 +1,5 @@
 *.sch-bak
+pc6001-pico-v*
 *autosave*
 *auto_save*
 *.lck
