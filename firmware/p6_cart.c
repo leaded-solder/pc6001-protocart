@@ -44,7 +44,8 @@ int emulate_boot_rom() {
             SET_DATA_MODE_OUT;
 
             addr = pins & ADDR_GPIO_MASK;
-            gpio_put_masked(DATA_GPIO_MASK, ((uint32_t)(P6_bootrom[addr])) << 13); // TODO: why 13?
+            // shifted by number of address pins (and also the ESP pins on 0, 1) - GPIO0 to 17 inclusive = 18 pins
+            gpio_put_masked(DATA_GPIO_MASK, ((uint32_t)(P6_bootrom[addr])) << 18);
 
             // wait for select to release
             while(!(gpio_get_all() & CS_GPIO_MASK));
