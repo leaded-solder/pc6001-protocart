@@ -6512,7 +6512,7 @@
 			)
 		)
 		(property ki_fp_filters "DIP?14*")
-		(path "/4f02e4a5-bc35-4af0-9a7d-d0c2358c2bc8")
+		(path "/66e55cb6-3aa6-4e59-abf1-4fc2f9b21d32")
 		(sheetname "Root")
 		(sheetfile "PC6001 Cart Protoboard.kicad_sch")
 		(attr through_hole)

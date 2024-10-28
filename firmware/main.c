@@ -29,22 +29,25 @@ void cdc_task(void);
 
 int main(void)
 {
-    // Check to see if we are plugged into a PC-6001
-    // by looking for activity on the a0 address pin for 100ms
-    // ...if we see some, we're going to be a cartridge
-    gpio_init(P6_A0_PIN);
-    gpio_set_dir(P6_A0_PIN, GPIO_IN);
-    while (to_ms_since_boot(get_absolute_time()) < 100)
-    {
-      if (gpio_get(P6_A0_PIN))
-        p6_cart_main();
-    }
+  // HACK
+  p6_cart_main();
+
+  // Check to see if we are plugged into a PC-6001
+  // by looking for activity on the a0 address pin for 100ms
+  // ...if we see some, we're going to be a cartridge
+  gpio_init(P6_A0_PIN);
+  gpio_set_dir(P6_A0_PIN, GPIO_IN);
+  while (to_ms_since_boot(get_absolute_time()) < 100)
+  {
+    if (gpio_get(P6_A0_PIN))
+      p6_cart_main();
+  }
 
   // otherwise, we are presumably powered from USB
   // enter USB mass storage mode
 
   stdio_init_all();   // for serial output, via printf()
-  printf("Start up\n");  
+  printf("Start up\n"); 
 
   // init device stack on configured roothub port
   tud_init(BOARD_TUD_RHPORT);
