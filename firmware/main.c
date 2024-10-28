@@ -22,24 +22,25 @@
 #include "pico/time.h"
 #include "tusb.h"
 
-#include "atari_cart.h"
+#include "p6_cart.h"
 #include "fatfs_disk.h"
 
 void cdc_task(void);
 
 int main(void)
 {
-    // check to see if we are plugged into Atari 8-bit
-    // by checking for high on PHI2 gpio for 100ms
-    gpio_init(ATARI_PHI2_PIN);
-    gpio_set_dir(ATARI_PHI2_PIN, GPIO_IN);
+    // Check to see if we are plugged into a PC-6001
+    // by looking for activity on the a0 address pin for 100ms
+    // ...if we see some, we're going to be a cartridge
+    gpio_init(P6_A0_PIN);
+    gpio_set_dir(P6_A0_PIN, GPIO_IN);
     while (to_ms_since_boot(get_absolute_time()) < 100)
     {
-      if (gpio_get(ATARI_PHI2_PIN))
-        atari_cart_main();
+      if (gpio_get(P6_A0_PIN))
+        p6_cart_main();
     }
 
-  // we are presumably powered from USB
+  // otherwise, we are presumably powered from USB
   // enter USB mass storage mode
 
   stdio_init_all();   // for serial output, via printf()

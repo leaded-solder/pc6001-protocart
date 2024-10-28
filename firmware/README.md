@@ -8,3 +8,5 @@ Not working or tested yet.
 ## TODO
  - [ ] Change pin definitions to match PC-6001
  - [ ] Boot a ROM off the Pico using this firmware
+ - [ ] Update USB descriptors
+ - [ ] Menu

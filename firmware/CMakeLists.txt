@@ -23,7 +23,7 @@ target_compile_definitions(a8_pico_cart PRIVATE
 
 target_sources(a8_pico_cart PUBLIC
     ${CMAKE_CURRENT_LIST_DIR}/main.c
-    ${CMAKE_CURRENT_LIST_DIR}/atari_cart.c
+    ${CMAKE_CURRENT_LIST_DIR}/p6_cart.c
     ${CMAKE_CURRENT_LIST_DIR}/msc_disk.c
     ${CMAKE_CURRENT_LIST_DIR}/usb_descriptors.c
     ${CMAKE_CURRENT_LIST_DIR}/fatfs_disk.c
