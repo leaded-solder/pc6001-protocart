@@ -4,3 +4,10 @@ cmake_install.cmake
 elf2uf2/
 generated/
 pico-sdk/
+a8_pico_cart.bin
+a8_pico_cart.dis
+a8_pico_cart.elf
+a8_pico_cart.elf.map
+a8_pico_cart.hex
+a8_pico_cart.uf2
+pioasm/
