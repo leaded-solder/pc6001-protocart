@@ -8,9 +8,9 @@ if(len(sys.argv) < 2):
 with open(sys.argv[1], 'rb') as f:
     b = bytes(f.read())
 
-with open('p6_bootrom.h', 'w') as f:
-    w.writeline('unsigned char P6_bootrom[] = {')
+with open('p6_bootrom.h', 'w') as w:
+    w.write('unsigned char P6_bootrom[] = {\n')
     for o in range(len(b)):
-        w.writeline('\t' + hex(b[o]) + ',')
-    w.writeline('};')
-    w.writeline(f'unsigned int P6_bootrom_len = {len(b)}; // does not appear to ever be consumed')
+        w.write('\t' + hex(b[o]) + ',\n')
+    w.write('};\n')
+    w.write(f'unsigned int P6_bootrom_len = {len(b)}; // does not appear to ever be consumed\n')

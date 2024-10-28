@@ -44,7 +44,7 @@ int emulate_boot_rom() {
             SET_DATA_MODE_OUT;
 
             addr = pins & ADDR_GPIO_MASK;
-            gpio_put_masked(DATA_GPIO_MASK, ((uint32_t)(A8PicoCart_rom[addr])) << 13))
+            gpio_put_masked(DATA_GPIO_MASK, ((uint32_t)(P6_bootrom[addr])) << 13); // TODO: why 13?
 
             // wait for select to release
             while(!(gpio_get_all() & CS_GPIO_MASK));
