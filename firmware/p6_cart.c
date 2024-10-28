@@ -20,11 +20,9 @@
 
 // FIXME: oops i forgot R/W, I guess we're just going to serve up a ROM
 
-int emulate_boot_rom() {
+int __not_in_flash_func(emulate_boot_rom)() {
     // TODO: Configure stuff
-    // TODO: Replace rom.h with my test ROM
-    // TODO: Read address pins and chip select
-
+    
     uint32_t pins = 0;
     uint16_t addr;
     uint8_t data;
@@ -32,7 +30,7 @@ int emulate_boot_rom() {
 
     while(true) {
         // wait for chip select
-		while (((pins = gpio_get_all()) & CS_GPIO_MASK)) ;
+		while (((pins = gpio_get_all()) & CS_GPIO_MASK));
 
         // TODO: Detect R/W pin in future version of hardware
 
