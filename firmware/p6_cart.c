@@ -43,9 +43,9 @@ int emulate_boot_rom() {
             // Totally normal cartridge ROM behaviour.
             SET_DATA_MODE_OUT;
 
-            addr = pins & ADDR_GPIO_MASK;
-            // shifted by number of address pins (and also the ESP pins on 0, 1) - GPIO0 to 17 inclusive = 18 pins
-            gpio_put_masked(DATA_GPIO_MASK, ((uint32_t)(P6_bootrom[addr])) << 18);
+            addr = (pins & ADDR_GPIO_MASK) << 2; // shift down so it starts at 0
+            // shifted by number of address pins (and also the ESP pins on 0, 1 and GPIO18 for ~CS) - GPIO0 to 18 inclusive = 19 pins
+            gpio_put_masked(DATA_GPIO_MASK, ((uint32_t)(P6_bootrom[addr])) << 19);
 
             // wait for select to release
             while(!(gpio_get_all() & CS_GPIO_MASK));
