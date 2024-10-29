@@ -7,7 +7,7 @@
 #include "ff.h"
 #include "fatfs_disk.h"
 
-#define ALL_GPIO_MASK   	0x3FFFFFFF // 30 IOs
+#define ALL_GPIO_MASK   	0x3FFFFFFF // 30 IOs 0..29 inclusive
 #define ADDR_GPIO_MASK  	0x0003fffc // GPIO 2 .. GPIO 17 inclusive, GPIO 0 and GPIO 1 off
 #define CS_GPIO_MASK        0x00040000 // GPIO 18 lights up when CS2 or CS3 are selected
 #define DATA_GPIO_MASK  	0x07f80000 // GPIO 19 .. GPIO 26 inclusive
@@ -29,7 +29,7 @@ int __not_in_flash_func(emulate_boot_rom)() {
 
     while(true) {
         // wait for chip select to go low
-		while (((pins = gpio_get_all()) & CS_GPIO_MASK));
+		while ((pins = gpio_get_all()) & CS_GPIO_MASK);
 
         // TODO: Detect R/W pin in future version of hardware
 
