@@ -1,3 +1,6 @@
+#ifndef __P6_BOOTROM_H__
+#define __P6_BOOTROM_H__
+
 unsigned char P6_bootrom[] = {
 	0x41,
 	0x42,
@@ -8193,3 +8196,5 @@ unsigned char P6_bootrom[] = {
 	0x0,
 };
 unsigned int P6_bootrom_len = 8192; // does not appear to ever be consumed
+
+#endif

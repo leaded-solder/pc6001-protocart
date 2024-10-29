@@ -9,8 +9,10 @@ with open(sys.argv[1], 'rb') as f:
     b = bytes(f.read())
 
 with open('p6_bootrom.h', 'w') as w:
+    w.write("#ifndef __P6_BOOTROM_H__\n#define __P6_BOOTROM_H__\n")
     w.write('unsigned char P6_bootrom[] = {\n')
     for o in range(len(b)):
         w.write('\t' + hex(b[o]) + ',\n')
     w.write('};\n')
     w.write(f'unsigned int P6_bootrom_len = {len(b)}; // does not appear to ever be consumed\n')
+    w.write("#endif\n")
