@@ -29,9 +29,6 @@ void cdc_task(void);
 
 int main(void)
 {
-  // HACK
-  p6_cart_main();
-
   // Check to see if we are plugged into a PC-6001
   // by looking for activity on the a0 address pin for 100ms
   // ...if we see some, we're going to be a cartridge

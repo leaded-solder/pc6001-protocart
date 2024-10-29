@@ -27,6 +27,9 @@ int __not_in_flash_func(emulate_boot_rom)() {
     uint8_t data;
     bool is_register_write = false;
 
+    // Overclock since both A8PicoCart and PiColeco do it
+    set_sys_clock_khz(250000, true);
+
     while(true) {
         // wait for chip select to go low
 		while (((pins = gpio_get_all()) & CS_GPIO_MASK));
@@ -58,6 +61,7 @@ int __not_in_flash_func(emulate_boot_rom)() {
 
 void __not_in_flash_func(p6_cart_main)() {
     gpio_init_mask(ALL_GPIO_MASK);
+    stdio_init_all(); // serial output via printf
 
     gpio_set_dir_in_masked(ADDR_GPIO_MASK|DATA_GPIO_MASK|CS_GPIO_MASK); // TODO: Others as they appear
 
