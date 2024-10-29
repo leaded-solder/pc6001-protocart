@@ -27,9 +27,6 @@ int __not_in_flash_func(emulate_boot_rom)() {
     uint8_t data;
     bool is_register_write = false;
 
-    // Overclock since both A8PicoCart and PiColeco do it
-    set_sys_clock_khz(250000, true);
-
     while(true) {
         // wait for chip select to go low
 		while (((pins = gpio_get_all()) & CS_GPIO_MASK));
