@@ -10,7 +10,7 @@
 #define ALL_GPIO_MASK   	0x3FFFFFFF // 30 IOs 0..29 inclusive
 #define ADDR_GPIO_MASK  	0x0003fffc // GPIO 2 .. GPIO 17 inclusive, GPIO 0 and GPIO 1 off
 #define CS_GPIO_MASK        0x00040000 // GPIO 18 lights up when CS2 or CS3 are selected
-#define DATA_GPIO_MASK  	0x07f80000 // GPIO 19 .. GPIO 26 inclusive
+#define DATA_GPIO_MASK  	0x07f80000 // GPIO 19 .. GPIO 26 inclusive (0xff << 19)
 
 #define SET_DATA_MODE_OUT   gpio_set_dir_out_masked(DATA_GPIO_MASK)
 #define SET_DATA_MODE_IN    gpio_set_dir_in_masked(DATA_GPIO_MASK)

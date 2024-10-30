@@ -36,8 +36,9 @@ int main(void)
   gpio_set_dir(P6_A0_PIN, GPIO_IN);
   while (to_ms_since_boot(get_absolute_time()) < 100)
   {
-    if (gpio_get(P6_A0_PIN))
+    if (gpio_get(P6_A0_PIN)) {
       p6_cart_main();
+    }
   }
 
   // otherwise, we are presumably powered from USB
