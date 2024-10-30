@@ -7,6 +7,14 @@
                 </div>
 
                 <script>
+                        var known_ios = {
+                                0: 'ESP_RX',
+                                1: 'ESP_TX',
+                                2: 'a0',
+                                18: 'ROM_CS',
+                                19: 'd0',
+                        }
+
                         function recalculateMask() {
                                 // Step through all the GPIOs
                                 var checkboxes = document.getElementsByTagName('input');
@@ -42,7 +50,13 @@
 
                                         var label  = document.createElement('label');
                                         label.htmlFor = checkbox.id;
-                                        label.appendChild(document.createTextNode('GPIO ' + i))
+                                        var labelText = 'GPIO ' + i
+
+                                        if(i in known_ios) {
+                                                labelText = labelText + " (" + known_ios[i] + ")"
+                                        }
+
+                                        label.appendChild(document.createTextNode(labelText))
 
                                         var wrapper = document.createElement('div')
                                         wrapper.appendChild(checkbox);
