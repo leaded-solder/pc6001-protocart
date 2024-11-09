@@ -1,4 +1,6 @@
 CMakeFiles/
+pico_flash_region.ld
+_deps
 build
 Makefile
 cmake_install.cmake
