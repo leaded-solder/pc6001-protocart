@@ -9571,6 +9571,16 @@
 		)
 		(uuid "5e1d6ed0-c153-47c9-b16a-c008f550af31")
 	)
+	(text "WE is special for RAM"
+		(exclude_from_sim no)
+		(at 156.845 98.425 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "6797e70f-675d-4450-ae34-eebfbb0e8e16")
+	)
 	(text "Generated here"
 		(exclude_from_sim no)
 		(at 300.736 64.135 0)
@@ -9887,7 +9897,7 @@
 		(uuid "1e2050a4-73d0-4779-997f-74ccc8e541a9")
 	)
 	(label "~{ROMSEL}"
-		(at 172.085 83.82 180)
+		(at 172.085 81.28 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -10338,7 +10348,7 @@
 		(uuid "7f68a7a6-27ac-4d8e-abc3-3124f8963b63")
 	)
 	(label "~{RAMSEL}"
-		(at 172.085 86.36 180)
+		(at 172.085 88.9 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -10514,7 +10524,7 @@
 		(uuid "95ae46b8-09a7-4b12-92bd-5ca2c9ea7504")
 	)
 	(label "~{CS3}"
-		(at 172.085 81.28 180)
+		(at 172.085 83.82 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -10547,7 +10557,7 @@
 		(uuid "973d4723-d45d-4f72-b912-8034b84c2c96")
 	)
 	(label "~{WR}"
-		(at 172.085 88.9 180)
+		(at 172.085 86.36 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -10591,7 +10601,7 @@
 		(uuid "a097b3bf-ef01-46d8-9f74-ff54f880e4d3")
 	)
 	(label "~{IORQ}"
-		(at 172.085 91.44 180)
+		(at 172.085 93.98 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -10908,6 +10918,17 @@
 			(justify left bottom)
 		)
 		(uuid "edb17f55-bdf2-4804-ba37-a3aaa090a563")
+	)
+	(label "~{WE}"
+		(at 172.085 91.44 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "ee95b6ad-b8a7-4c45-8688-6f9e5794f30d")
 	)
 	(label "~{CS3}"
 		(at 20.32 163.83 180)
