@@ -9561,6 +9561,16 @@
 		)
 		(uuid "4bb87a74-6062-4bec-9e39-d2c476653ede")
 	)
+	(text "TODO: Figure out how to do direction and OE"
+		(exclude_from_sim no)
+		(at 219.71 91.44 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "5e1d6ed0-c153-47c9-b16a-c008f550af31")
+	)
 	(text "Generated here"
 		(exclude_from_sim no)
 		(at 300.736 64.135 0)
@@ -9570,17 +9580,6 @@
 			)
 		)
 		(uuid "7440fda2-3553-4315-a013-e9b4fe4f2237")
-	)
-	(text "temporary place for sram,\nwill probably get dumped in\nfuture rev"
-		(exclude_from_sim no)
-		(at 212.09 107.95 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "77eca255-9b2d-4922-a04a-6032fa380244")
 	)
 	(text "TODO: RAM read/write"
 		(exclude_from_sim no)
