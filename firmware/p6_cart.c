@@ -44,8 +44,10 @@ int __not_in_flash_func(emulate_boot_rom)() {
             addr = (pins & ROMADDR_GPIO_MASK) >> 2; // shift down so it starts at 0
             // address limited to 0x3fff (8k) because otherwise a14 and a15 from the decode will interfere
 
+            // FIXME: this modulo hack should not exist. try moving to CS2 and see where we get to
+
             // shifted by number of address pins (and also the ESP pins on 0, 1 and GPIO18 for ~CS) - GPIO0 to 18 inclusive = 19 pins
-            gpio_put_masked(DATA_GPIO_MASK, ((uint32_t)(P6_bootrom[addr])) << 19);
+            gpio_put_masked(DATA_GPIO_MASK, ((uint32_t)(P6_bootrom[addr % 8192])) << 19); // modulo is HACK
 
             // wait for select to release (go high)
             while(!(gpio_get_all() & CS_GPIO_MASK));
@@ -53,6 +55,7 @@ int __not_in_flash_func(emulate_boot_rom)() {
             SET_DATA_MODE_IN;
         }
 
+        // TODO: Detect and log crazy address access
     }
 
     return 0;

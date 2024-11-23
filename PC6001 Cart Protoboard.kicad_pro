@@ -52,7 +52,10 @@
         }
       },
       "diff_pair_dimensions": [],
-      "drc_exclusions": [],
+      "drc_exclusions": [
+        "silk_edge_clearance|218440000|80291000|3bd90daf-ccfe-49d9-8d50-f4c61714821c|3b3c00d3-bac1-4982-95fe-c075e023dcdf",
+        "silk_edge_clearance|218440000|98291000|3bd90daf-ccfe-49d9-8d50-f4c61714821c|05850bc3-a1a7-4856-bac6-9298c3de69de"
+      ],
       "meta": {
         "filename": "board_design_settings.json",
         "version": 2
