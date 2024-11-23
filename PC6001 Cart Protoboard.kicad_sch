@@ -9888,7 +9888,7 @@
 		(uuid "1e2050a4-73d0-4779-997f-74ccc8e541a9")
 	)
 	(label "~{ROMSEL}"
-		(at 172.085 101.6 180)
+		(at 172.085 104.14 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -9908,17 +9908,6 @@
 			(justify left bottom)
 		)
 		(uuid "23157566-14c7-4c6f-90b4-f593086ea85b")
-	)
-	(label "~{DRD2}"
-		(at 246.38 83.185 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "23bbb9a5-ad4f-4db4-8f28-5a45076102db")
 	)
 	(label "ad2"
 		(at 134.62 43.815 0)
@@ -9974,28 +9963,6 @@
 			(justify left bottom)
 		)
 		(uuid "2f9001b9-314b-44b9-ab22-a61b379ca586")
-	)
-	(label "~{WR}"
-		(at 246.38 85.725 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "3406a845-cc96-4c11-a05a-0009b15b9a1f")
-	)
-	(label "~{RAMSEL}"
-		(at 246.38 88.265 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "3447ff5a-8a76-440e-ae87-411203824b11")
 	)
 	(label "d3"
 		(at 108.585 116.84 180)
@@ -10372,7 +10339,7 @@
 		(uuid "7f68a7a6-27ac-4d8e-abc3-3124f8963b63")
 	)
 	(label "~{RAMSEL}"
-		(at 172.085 104.14 180)
+		(at 172.085 106.68 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -10547,6 +10514,17 @@
 		)
 		(uuid "95ae46b8-09a7-4b12-92bd-5ca2c9ea7504")
 	)
+	(label "~{CS3}"
+		(at 172.085 101.6 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "969b45b5-1fca-45d3-bf50-5fb940abb1f4")
+	)
 	(label "d5"
 		(at 108.585 121.92 180)
 		(fields_autoplaced yes)
@@ -10570,7 +10548,7 @@
 		(uuid "973d4723-d45d-4f72-b912-8034b84c2c96")
 	)
 	(label "~{WR}"
-		(at 172.085 106.68 180)
+		(at 172.085 109.22 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -10612,6 +10590,17 @@
 			(justify right bottom)
 		)
 		(uuid "a097b3bf-ef01-46d8-9f74-ff54f880e4d3")
+	)
+	(label "~{IORQ}"
+		(at 172.085 111.76 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "a2306646-aad1-495a-a1f4-043d0acdb52c")
 	)
 	(label "GND"
 		(at 51.435 132.08 180)
