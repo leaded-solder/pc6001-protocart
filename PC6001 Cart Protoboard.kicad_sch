@@ -9690,7 +9690,7 @@
 		(uuid "058831a6-910d-49b8-91cd-539eb0b7c2b7")
 	)
 	(label "a12"
-		(at 172.085 91.44 180)
+		(at 109.22 83.82 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -9855,7 +9855,7 @@
 		(uuid "1a0d37b3-082c-4ecd-a72b-4a4908829075")
 	)
 	(label "a11"
-		(at 172.085 88.9 180)
+		(at 109.22 81.28 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -9877,7 +9877,7 @@
 		(uuid "1c1ba7e2-b55f-41ca-9dba-63cb63026df4")
 	)
 	(label "a10"
-		(at 172.085 86.36 180)
+		(at 109.22 78.74 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -9888,7 +9888,7 @@
 		(uuid "1e2050a4-73d0-4779-997f-74ccc8e541a9")
 	)
 	(label "~{ROMSEL}"
-		(at 172.085 104.14 180)
+		(at 172.085 83.82 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -9921,7 +9921,7 @@
 		(uuid "25b895f0-b1d8-47b9-b181-05d4592a31c3")
 	)
 	(label "a15"
-		(at 172.085 99.06 180)
+		(at 109.22 91.44 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -10163,7 +10163,7 @@
 		(uuid "59088829-016d-45b0-83db-314e1a112227")
 	)
 	(label "a13"
-		(at 172.085 93.98 180)
+		(at 109.22 86.36 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -10196,7 +10196,7 @@
 		(uuid "5c3a5abd-ab03-4ebe-85b6-6827518b7800")
 	)
 	(label "a14"
-		(at 172.085 96.52 180)
+		(at 109.22 88.9 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -10339,7 +10339,7 @@
 		(uuid "7f68a7a6-27ac-4d8e-abc3-3124f8963b63")
 	)
 	(label "~{RAMSEL}"
-		(at 172.085 106.68 180)
+		(at 172.085 86.36 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -10515,7 +10515,7 @@
 		(uuid "95ae46b8-09a7-4b12-92bd-5ca2c9ea7504")
 	)
 	(label "~{CS3}"
-		(at 172.085 101.6 180)
+		(at 172.085 81.28 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -10548,7 +10548,7 @@
 		(uuid "973d4723-d45d-4f72-b912-8034b84c2c96")
 	)
 	(label "~{WR}"
-		(at 172.085 109.22 180)
+		(at 172.085 88.9 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -10592,7 +10592,7 @@
 		(uuid "a097b3bf-ef01-46d8-9f74-ff54f880e4d3")
 	)
 	(label "~{IORQ}"
-		(at 172.085 111.76 180)
+		(at 172.085 91.44 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -10856,7 +10856,7 @@
 		(uuid "da63e3dd-d84f-4c9e-b6c4-f8252f020e12")
 	)
 	(label "a9"
-		(at 172.085 83.82 180)
+		(at 109.22 76.2 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -11065,7 +11065,7 @@
 		(uuid "feae8de4-8697-4ea3-afde-a6fdedeb9de9")
 	)
 	(label "a8"
-		(at 172.085 81.28 180)
+		(at 109.22 73.66 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
