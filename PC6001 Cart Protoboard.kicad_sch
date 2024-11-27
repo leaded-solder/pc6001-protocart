@@ -9709,6 +9709,16 @@
 		)
 		(uuid "80250244-5b6f-4686-9639-4648107a563f")
 	)
+	(text "TODO: should 3.3v come from the RP?"
+		(exclude_from_sim no)
+		(at 216.535 83.82 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "b17fda0a-c1f4-4d04-9b5d-e28148d99139")
+	)
 	(text "http://p6ers.net/mm/pc-6001/dev/flashromcard/16k.html for 16K"
 		(exclude_from_sim no)
 		(at 289.56 151.765 0)
