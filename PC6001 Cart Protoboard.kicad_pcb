@@ -68,7 +68,7 @@
 			(mirror no)
 			(drillshape 0)
 			(scaleselection 1)
-			(outputdirectory "pc6001-pico-v1")
+			(outputdirectory "pc6001-pico-v1.1")
 		)
 	)
 	(net 0 "")
