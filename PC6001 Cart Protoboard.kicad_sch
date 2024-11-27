@@ -10024,7 +10024,7 @@
 		)
 		(uuid "19bb2cdb-79d6-4a3b-8168-7fcd022aa6f0")
 	)
-	(label "CMD"
+	(label "ESP_CMD"
 		(at 318.77 100.965 0)
 		(fields_autoplaced yes)
 		(effects
@@ -11157,7 +11157,7 @@
 		)
 		(uuid "d080b51d-d010-4845-a73c-90e3d761e768")
 	)
-	(label "PROC"
+	(label "ESP_PROC"
 		(at 318.77 103.505 0)
 		(fields_autoplaced yes)
 		(effects
