@@ -11300,7 +11300,7 @@
 		)
 		(uuid "ebcd2ad2-278b-4dd1-87dc-dbc6be735c0e")
 	)
-	(label "INT"
+	(label "ESP_INT"
 		(at 318.77 106.045 0)
 		(fields_autoplaced yes)
 		(effects
