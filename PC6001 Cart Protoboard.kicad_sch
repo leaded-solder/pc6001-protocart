@@ -8374,8 +8374,8 @@
 		(uuid "fe6b7dee-205d-449d-a266-0e7fa155eef4")
 	)
 	(no_connect
-		(at 188.595 53.34)
-		(uuid "56e00b3f-a253-4c9b-ba70-4c6e0d4c5092")
+		(at 281.94 65.405)
+		(uuid "35225710-a7ca-4d4a-bcda-8601b3f3e470")
 	)
 	(no_connect
 		(at 196.215 63.5)
@@ -8557,6 +8557,16 @@
 	)
 	(wire
 		(pts
+			(xy 188.595 41.275) (xy 188.595 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "28909c4c-9e01-420f-bb36-5065e82d8e09")
+	)
+	(wire
+		(pts
 			(xy 100.33 93.98) (xy 109.22 93.98)
 		)
 		(stroke
@@ -8594,6 +8604,16 @@
 			(type default)
 		)
 		(uuid "2eb6ba55-8f0f-410e-94c8-51e8382c2e8f")
+	)
+	(wire
+		(pts
+			(xy 199.39 41.275) (xy 188.595 41.275)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3431d88f-7a05-4356-8318-37d9d764095e")
 	)
 	(wire
 		(pts
@@ -8647,16 +8667,6 @@
 	)
 	(wire
 		(pts
-			(xy 292.1 56.515) (xy 292.1 65.405)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3e0ad43b-d119-44f9-9342-60c9de2d9ae2")
-	)
-	(wire
-		(pts
 			(xy 359.41 103.505) (xy 359.41 106.045)
 		)
 		(stroke
@@ -8664,16 +8674,6 @@
 			(type default)
 		)
 		(uuid "42dd6ae6-5f3d-4b1e-bd82-7ce6045a556f")
-	)
-	(wire
-		(pts
-			(xy 292.1 65.405) (xy 281.94 65.405)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "45911184-06b6-4a2e-943c-b6fba7a49ab2")
 	)
 	(wire
 		(pts
@@ -8724,6 +8724,16 @@
 			(type default)
 		)
 		(uuid "502cad48-299e-477f-ba42-f563431fb4b2")
+	)
+	(wire
+		(pts
+			(xy 199.39 24.765) (xy 199.39 41.275)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "54105539-28a0-4564-abb1-b50208330e82")
 	)
 	(wire
 		(pts
@@ -9659,16 +9669,6 @@
 		)
 		(uuid "4bb87a74-6062-4bec-9e39-d2c476653ede")
 	)
-	(text "TODO: Figure out how to do direction and OE"
-		(exclude_from_sim no)
-		(at 219.71 91.44 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "5e1d6ed0-c153-47c9-b16a-c008f550af31")
-	)
 	(text "WE is special for RAM"
 		(exclude_from_sim no)
 		(at 156.845 98.425 0)
@@ -9689,16 +9689,6 @@
 		)
 		(uuid "69c6eb54-0174-4e8e-8d26-74c34b33f090")
 	)
-	(text "Generated here"
-		(exclude_from_sim no)
-		(at 300.736 64.135 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "7440fda2-3553-4315-a013-e9b4fe4f2237")
-	)
 	(text "TODO: RAM read/write"
 		(exclude_from_sim no)
 		(at 77.47 112.395 0)
@@ -9708,16 +9698,6 @@
 			)
 		)
 		(uuid "80250244-5b6f-4686-9639-4648107a563f")
-	)
-	(text "TODO: should 3.3v come from the RP?"
-		(exclude_from_sim no)
-		(at 216.535 83.82 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "b17fda0a-c1f4-4d04-9b5d-e28148d99139")
 	)
 	(text "http://p6ers.net/mm/pc-6001/dev/flashromcard/16k.html for 16K"
 		(exclude_from_sim no)
@@ -9739,6 +9719,16 @@
 			)
 		)
 		(uuid "c84d047d-0ceb-448a-b411-46613696937c")
+	)
+	(text "Generated here for now"
+		(exclude_from_sim no)
+		(at 212.09 27.305 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "d9308fbc-c2a7-453c-b03e-9faa474709bb")
 	)
 	(text "TODO: add an alternative footprint for the soldered-down slot"
 		(exclude_from_sim no)
@@ -12696,72 +12686,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+3.3V")
-		(at 292.1 56.515 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "3b570f39-5f9e-461d-8952-107a5eb0997c")
-		(property "Reference" "#PWR08"
-			(at 292.1 60.325 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+3.3V"
-			(at 292.1 51.435 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 292.1 56.515 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 292.1 56.515 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 292.1 56.515 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "398ca2c0-0304-408f-a230-ef220b368d79")
-		)
-		(instances
-			(project ""
-				(path "/43e41326-819e-40e7-9c3a-9c7b5d01c509"
-					(reference "#PWR08")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "74lvc245an:SN74LVC245AN")
 		(at 93.98 36.195 0)
 		(unit 1)
@@ -14516,6 +14440,72 @@
 			(project "PC6001 Cart Protoboard"
 				(path "/43e41326-819e-40e7-9c3a-9c7b5d01c509"
 					(reference "R3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3.3V")
+		(at 199.39 24.765 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a45cb35e-ab3d-434e-aba6-621fc6859c38")
+		(property "Reference" "#PWR08"
+			(at 199.39 28.575 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 199.39 20.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 199.39 24.765 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 199.39 24.765 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 199.39 24.765 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "fd9e904f-ac20-46a3-81ac-84725e1eda21")
+		)
+		(instances
+			(project ""
+				(path "/43e41326-819e-40e7-9c3a-9c7b5d01c509"
+					(reference "#PWR08")
 					(unit 1)
 				)
 			)
