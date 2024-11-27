@@ -6816,150 +6816,6 @@
 				)
 			)
 		)
-		(symbol "Jumper:Jumper_2_Bridged"
-			(pin_names
-				(offset 0) hide)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "JP"
-				(at 0 1.905 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "Jumper_2_Bridged"
-				(at 0 -2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Jumper, 2-pole, closed/bridged"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "Jumper SPST"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "Jumper* TestPoint*2Pads* TestPoint*Bridge*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "Jumper_2_Bridged_0_0"
-				(circle
-					(center -2.032 0)
-					(radius 0.508)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 2.032 0)
-					(radius 0.508)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "Jumper_2_Bridged_0_1"
-				(arc
-					(start 1.524 0.254)
-					(mid 0 0.762)
-					(end -1.524 0.254)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "Jumper_2_Bridged_1_1"
-				(pin passive line
-					(at -5.08 0 0)
-					(length 2.54)
-					(name "A"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 5.08 0 180)
-					(length 2.54)
-					(name "B"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-		)
 		(symbol "Switch:SW_Push"
 			(pin_numbers hide)
 			(pin_names
@@ -8921,16 +8777,6 @@
 	)
 	(wire
 		(pts
-			(xy 72.39 132.08) (xy 72.39 124.46)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "835b8b1f-f3a8-4e47-8b87-646689d0796a")
-	)
-	(wire
-		(pts
 			(xy 175.895 147.32) (xy 175.895 146.05)
 		)
 		(stroke
@@ -9191,16 +9037,6 @@
 	)
 	(wire
 		(pts
-			(xy 72.39 124.46) (xy 74.93 124.46)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c364b6a9-b654-4698-8497-3f90ef2ddb10")
-	)
-	(wire
-		(pts
 			(xy 332.74 123.825) (xy 340.36 123.825)
 		)
 		(stroke
@@ -9208,6 +9044,16 @@
 			(type default)
 		)
 		(uuid "c86979d2-0039-4fda-ae18-72455a21c448")
+	)
+	(wire
+		(pts
+			(xy 64.135 134.62) (xy 72.39 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cb1f166c-4057-4bba-b536-1e9b4cd158cc")
 	)
 	(wire
 		(pts
@@ -9331,6 +9177,16 @@
 	)
 	(wire
 		(pts
+			(xy 72.39 134.62) (xy 72.39 132.08)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dbf1c0ec-e360-4e2f-ac77-abfd575be330")
+	)
+	(wire
+		(pts
 			(xy 328.93 118.745) (xy 340.36 118.745)
 		)
 		(stroke
@@ -9408,16 +9264,6 @@
 			(type default)
 		)
 		(uuid "e913168c-5354-4fd8-b451-b2317e46a150")
-	)
-	(wire
-		(pts
-			(xy 64.135 134.62) (xy 74.93 134.62)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e91afbf2-2337-4b3e-8171-b113e2452c11")
 	)
 	(wire
 		(pts
@@ -9519,15 +9365,15 @@
 		)
 		(uuid "ffa6acdc-68bc-494b-b178-157eff8a7749")
 	)
-	(text "TODO: add an SD card slot"
+	(text "TODO: add a poke-yoke for the TX/RX"
 		(exclude_from_sim no)
-		(at 150.876 182.88 0)
+		(at 220.345 95.885 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 		)
-		(uuid "0c571f90-0891-4659-8ee8-b9639ca9d52b")
+		(uuid "0134bc43-fc62-40f6-94bd-d34e3c6e65cf")
 	)
 	(text "http://p6ers.net/mm/pc-6001/dev/flashromcard/8k.html for 8k"
 		(exclude_from_sim no)
@@ -9622,6 +9468,16 @@
 		)
 		(uuid "c84d047d-0ceb-448a-b411-46613696937c")
 	)
+	(text "TODO: add an alternative footprint for the soldered-down slot"
+		(exclude_from_sim no)
+		(at 370.205 135.255 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "dd0172e9-7971-438c-a4e8-236498b8b019")
+	)
 	(text "TODO: add power diodes"
 		(exclude_from_sim no)
 		(at 304.038 194.056 0)
@@ -9665,6 +9521,17 @@
 		)
 		(uuid "031fb8ce-03bd-414a-b280-9ec882fb66ce")
 	)
+	(label "ad0"
+		(at 134.62 73.66 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "0378cf75-f27e-4943-aad7-bb4ccf8f43f6")
+	)
 	(label "d7"
 		(at 108.585 127 180)
 		(fields_autoplaced yes)
@@ -9686,6 +9553,17 @@
 			(justify left bottom)
 		)
 		(uuid "03fbc2d9-c960-41cd-a196-1fce0beae7a8")
+	)
+	(label "ad1"
+		(at 134.62 76.2 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "04bdaa52-954e-4d1d-897a-86b762d4b187")
 	)
 	(label "a1"
 		(at 51.435 111.76 180)
@@ -9972,6 +9850,17 @@
 			(justify left bottom)
 		)
 		(uuid "2f9001b9-314b-44b9-ab22-a61b379ca586")
+	)
+	(label "ad5"
+		(at 134.62 86.36 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "30ddcd59-915e-4778-bb72-afcb26e225fa")
 	)
 	(label "d3"
 		(at 108.585 116.84 180)
@@ -10292,6 +10181,17 @@
 		)
 		(uuid "705a209d-576d-4291-825c-bfb750ba42d4")
 	)
+	(label "ad6"
+		(at 134.62 88.9 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "714695a0-72b9-423d-9bc1-f45300eec4c8")
+	)
 	(label "a4"
 		(at 64.135 116.84 0)
 		(fields_autoplaced yes)
@@ -10313,6 +10213,17 @@
 			(justify left bottom)
 		)
 		(uuid "746495f2-60cf-4782-a798-8307a313fcd4")
+	)
+	(label "ad7"
+		(at 134.62 91.44 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "799ee277-0d17-4280-b01b-fbfaeed279e7")
 	)
 	(label "ad0"
 		(at 134.62 38.735 0)
@@ -10622,6 +10533,17 @@
 		)
 		(uuid "a53808b1-2c74-4218-ab86-acc0ccea5b36")
 	)
+	(label "ad3"
+		(at 134.62 81.28 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "a600654c-55eb-423d-8be4-c1c016da1c12")
+	)
 	(label "5V"
 		(at 51.435 137.16 180)
 		(fields_autoplaced yes)
@@ -10665,6 +10587,17 @@
 			(justify left bottom)
 		)
 		(uuid "ae050149-14de-4e14-a1e0-4535549e06ca")
+	)
+	(label "ad4"
+		(at 134.62 83.82 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "b02c0c3a-c93a-4143-8bc4-ee984bc2d2e7")
 	)
 	(label "IO0{slash}BUTTON_A"
 		(at 342.9 60.325 180)
@@ -10907,6 +10840,17 @@
 			(justify right bottom)
 		)
 		(uuid "e30cc629-cfdc-4bed-ac27-80399f9578fd")
+	)
+	(label "ad2"
+		(at 134.62 78.74 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "e48d60c4-f6ea-4190-b862-fcf0913e3373")
 	)
 	(label "INT"
 		(at 318.77 106.045 0)
@@ -12512,77 +12456,6 @@
 			(project "PC6001 Cart Protoboard"
 				(path "/43e41326-819e-40e7-9c3a-9c7b5d01c509"
 					(reference "#PWR018")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Jumper:Jumper_2_Bridged")
-		(at 74.93 129.54 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "3cd1e278-9c0a-4739-a58c-e026301a0917")
-		(property "Reference" "JP1"
-			(at 76.835 129.54 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "Jumper_2_Bridged"
-			(at 76.835 130.81 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "Jumper:SolderJumper-2_P1.3mm_Bridged2Bar_Pad1.0x1.5mm"
-			(at 74.93 129.54 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 74.93 129.54 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 74.93 129.54 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "0c2f30fa-83a0-4aa6-ad5d-21a15b593b9e")
-		)
-		(pin "2"
-			(uuid "e8eaa699-a129-4200-9f6b-7de3f5e15afb")
-		)
-		(instances
-			(project "PC6001 Cart Protoboard"
-				(path "/43e41326-819e-40e7-9c3a-9c7b5d01c509"
-					(reference "JP1")
 					(unit 1)
 				)
 			)
