@@ -9807,6 +9807,17 @@
 		)
 		(uuid "25b895f0-b1d8-47b9-b181-05d4592a31c3")
 	)
+	(label "~{WR}"
+		(at 20.32 198.755 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "289ab5df-30b7-4e4c-aaea-303ad6840580")
+	)
 	(label "a15"
 		(at 109.22 91.44 180)
 		(fields_autoplaced yes)
@@ -9895,6 +9906,17 @@
 		)
 		(uuid "35e75e93-b87a-40d0-bc9d-06829dae1f0a")
 	)
+	(label "~{IOWR}"
+		(at 35.56 196.215 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "35fbaf5e-47e2-449d-adc5-cdc46c62a4ec")
+	)
 	(label "-5V"
 		(at 51.435 139.7 180)
 		(fields_autoplaced yes)
@@ -9961,7 +9983,7 @@
 		)
 		(uuid "46396fdb-ed94-45be-9425-8253c56b3868")
 	)
-	(label "IORQ"
+	(label "~{IORQ}"
 		(at 51.435 91.44 180)
 		(fields_autoplaced yes)
 		(effects
@@ -9983,7 +10005,7 @@
 		)
 		(uuid "46f68bee-9ba0-492e-a5c3-80a570f7f3e7")
 	)
-	(label "MREQ"
+	(label "~{MREQ}"
 		(at 64.135 91.44 0)
 		(fields_autoplaced yes)
 		(effects
@@ -10917,6 +10939,17 @@
 			(justify left bottom)
 		)
 		(uuid "f1dbaed3-ef2e-44bc-b96d-51bca8d93550")
+	)
+	(label "~{IOREQ}"
+		(at 20.32 193.675 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "f485ffde-0a24-4a48-bcd6-c9e9d847aa95")
 	)
 	(label "a2"
 		(at 109.22 43.815 180)
@@ -13446,6 +13479,110 @@
 				(path "/43e41326-819e-40e7-9c3a-9c7b5d01c509"
 					(reference "#PWR020")
 					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "74xx:74LS32")
+		(at 27.94 196.215 0)
+		(unit 2)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "98ec1682-ddec-42e8-bbcf-d9fdc27fc2e2")
+		(property "Reference" "U9"
+			(at 27.94 187.325 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "74LS32"
+			(at 27.94 189.865 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_DIP:DIP-14_W7.62mm_Socket_LongPads"
+			(at 27.94 196.215 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.ti.com/lit/gpn/sn74LS32"
+			(at 27.94 196.215 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Quad 2-input OR"
+			(at 27.94 196.215 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "6"
+			(uuid "e659a661-3fa7-481c-8b31-c8a73326ad74")
+		)
+		(pin "11"
+			(uuid "3b65b751-3899-460c-bb23-bac5dd16c31c")
+		)
+		(pin "1"
+			(uuid "466e3ca4-616c-4d7b-968e-a4feee96fd58")
+		)
+		(pin "13"
+			(uuid "cde8d776-114f-49d4-ad84-225ac3d28eb6")
+		)
+		(pin "10"
+			(uuid "80462d76-e83d-4588-ac01-7f1521d1f511")
+		)
+		(pin "2"
+			(uuid "3494e523-2277-4726-aba8-3fdc4276ad0c")
+		)
+		(pin "9"
+			(uuid "e14b85f6-8170-45ad-94f7-6f65cc19b15b")
+		)
+		(pin "8"
+			(uuid "cc5ef692-29fc-42bc-add4-f0862a270c82")
+		)
+		(pin "7"
+			(uuid "d9714834-80cb-4593-b02e-2832998f9ea7")
+		)
+		(pin "5"
+			(uuid "4d7d2c0f-c845-43eb-b70c-59d68261667e")
+		)
+		(pin "12"
+			(uuid "d0696315-ce39-4dda-bb49-7f931e3bfa9f")
+		)
+		(pin "3"
+			(uuid "251bcc06-80b7-40b3-a8d6-4132977a22c6")
+		)
+		(pin "14"
+			(uuid "1c2be204-7ea0-4ada-98ae-c32b0ccb4559")
+		)
+		(pin "4"
+			(uuid "092b9223-a4b1-4921-b2fa-56608b749c86")
+		)
+		(instances
+			(project "PC6001 Cart Protoboard"
+				(path "/43e41326-819e-40e7-9c3a-9c7b5d01c509"
+					(reference "U9")
+					(unit 2)
 				)
 			)
 		)
