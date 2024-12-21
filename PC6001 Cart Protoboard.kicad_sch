@@ -8521,6 +8521,12 @@
 		(uuid "1ee91ca5-cb4c-46f1-9908-139c6e5f490f")
 	)
 	(junction
+		(at 98.425 36.195)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2002673f-443a-4184-a97f-f20a575046d1")
+	)
+	(junction
 		(at 326.39 186.69)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -8774,6 +8780,16 @@
 	)
 	(wire
 		(pts
+			(xy 98.425 36.195) (xy 109.22 36.195)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "14d3b3bf-46f2-4760-b4a6-583f05a6ce8c")
+	)
+	(wire
+		(pts
 			(xy 323.85 46.355) (xy 330.2 46.355)
 		)
 		(stroke
@@ -8924,6 +8940,16 @@
 	)
 	(wire
 		(pts
+			(xy 98.425 34.925) (xy 98.425 36.195)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3965557e-9090-44be-8e8d-b6403f7fdbce")
+	)
+	(wire
+		(pts
 			(xy 33.02 132.08) (xy 33.02 129.54)
 		)
 		(stroke
@@ -9021,6 +9047,16 @@
 			(type default)
 		)
 		(uuid "502cad48-299e-477f-ba42-f563431fb4b2")
+	)
+	(wire
+		(pts
+			(xy 100.33 106.68) (xy 108.585 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "52a63792-0fce-4f5a-a60b-d69189fb6b3b")
 	)
 	(wire
 		(pts
@@ -9191,6 +9227,16 @@
 			(type default)
 		)
 		(uuid "77575f06-f8d3-4673-b07f-77970982d626")
+	)
+	(wire
+		(pts
+			(xy 100.965 71.12) (xy 109.22 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "786746b6-ffe5-48fa-aea5-ceef13a1a821")
 	)
 	(wire
 		(pts
@@ -9511,6 +9557,16 @@
 			(type default)
 		)
 		(uuid "b228f1a0-aafa-4cc9-8258-be336f1e0514")
+	)
+	(wire
+		(pts
+			(xy 98.425 28.575) (xy 98.425 29.845)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b4c5d9ae-ce02-439d-a71f-c357890ad0b7")
 	)
 	(wire
 		(pts
@@ -9934,6 +9990,16 @@
 	)
 	(wire
 		(pts
+			(xy 93.345 36.195) (xy 98.425 36.195)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f98265f7-995d-422d-a5e1-ddfb85564ef0")
+	)
+	(wire
+		(pts
 			(xy 332.74 90.805) (xy 332.74 123.825)
 		)
 		(stroke
@@ -10077,6 +10143,16 @@
 		)
 		(uuid "dd0172e9-7971-438c-a4e8-236498b8b019")
 	)
+	(text "always IN"
+		(exclude_from_sim no)
+		(at 106.68 105.41 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "dd8324e1-2edb-4b1b-ac07-0444f7061f6c")
+	)
 	(text "Buffer control pins"
 		(exclude_from_sim no)
 		(at 154.94 113.03 0)
@@ -10164,7 +10240,7 @@
 		(uuid "03fbc2d9-c960-41cd-a196-1fce0beae7a8")
 	)
 	(label "IN{slash}~{OUT}"
-		(at 109.22 36.195 180)
+		(at 93.345 36.195 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -10701,17 +10777,6 @@
 			(justify right bottom)
 		)
 		(uuid "4a636920-218f-4b7f-9afe-5982afe09dfb")
-	)
-	(label "IN{slash}~{OUT}"
-		(at 108.585 106.68 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "4d0edcac-41b1-40ca-8dca-2481bbdfc2a0")
 	)
 	(label "H{slash}~{L}"
 		(at 69.85 208.28 180)
@@ -11405,17 +11470,6 @@
 			(justify left bottom)
 		)
 		(uuid "c07b66de-d74d-4054-9142-cc563a5b215b")
-	)
-	(label "IN{slash}~{OUT}"
-		(at 109.22 71.12 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "c0c3b811-79ca-4e29-aa19-aa11dc273325")
 	)
 	(label "a0"
 		(at 64.135 111.76 0)
@@ -13023,6 +13077,76 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R_Small_US")
+		(at 98.425 32.385 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "384dc6f4-4a2e-4433-9577-6f81caa177cf")
+		(property "Reference" "R4"
+			(at 100.965 31.1149 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10kΩ"
+			(at 100.965 33.6549 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
+			(at 98.425 32.385 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 98.425 32.385 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small US symbol"
+			(at 98.425 32.385 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "ff71d969-d491-45bc-a182-c59ec32577c2")
+		)
+		(pin "1"
+			(uuid "4e63d518-ead6-411d-9840-31930676c8de")
+		)
+		(instances
+			(project ""
+				(path "/43e41326-819e-40e7-9c3a-9c7b5d01c509"
+					(reference "R4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "74lvc245an:SN74LVC245AN")
 		(at 93.98 36.195 0)
 		(unit 1)
@@ -13650,6 +13774,72 @@
 				(path "/43e41326-819e-40e7-9c3a-9c7b5d01c509"
 					(reference "U3")
 					(unit 2)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3.3V")
+		(at 98.425 28.575 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "6d4f2fcd-a3e3-44bf-96fd-338661f1ed64")
+		(property "Reference" "#PWR024"
+			(at 98.425 32.385 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 98.425 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 98.425 28.575 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 98.425 28.575 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 98.425 28.575 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "9f448625-2066-4d04-b9fc-b88d8eaf92db")
+		)
+		(instances
+			(project "PC6001 Cart Protoboard"
+				(path "/43e41326-819e-40e7-9c3a-9c7b5d01c509"
+					(reference "#PWR024")
+					(unit 1)
 				)
 			)
 		)
@@ -14332,6 +14522,72 @@
 			(project ""
 				(path "/43e41326-819e-40e7-9c3a-9c7b5d01c509"
 					(reference "#PWR023")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3.3V")
+		(at 100.965 71.12 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7b084f65-ed62-410e-a25d-df397348207b")
+		(property "Reference" "#PWR025"
+			(at 100.965 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 100.965 66.675 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 100.965 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 100.965 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 100.965 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "900b938c-22ef-4980-8dd9-f99233ec294f")
+		)
+		(instances
+			(project "PC6001 Cart Protoboard"
+				(path "/43e41326-819e-40e7-9c3a-9c7b5d01c509"
+					(reference "#PWR025")
 					(unit 1)
 				)
 			)
@@ -15221,6 +15477,72 @@
 				(path "/43e41326-819e-40e7-9c3a-9c7b5d01c509"
 					(reference "U3")
 					(unit 3)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3.3V")
+		(at 100.33 106.68 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a5ddafff-4fea-4863-9643-3c3c08ab6409")
+		(property "Reference" "#PWR026"
+			(at 100.33 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 100.33 102.235 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 100.33 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 100.33 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 100.33 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "09220947-ec03-45cc-8581-ac91dce4fc92")
+		)
+		(instances
+			(project "PC6001 Cart Protoboard"
+				(path "/43e41326-819e-40e7-9c3a-9c7b5d01c509"
+					(reference "#PWR026")
+					(unit 1)
 				)
 			)
 		)
