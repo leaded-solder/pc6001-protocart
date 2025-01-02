@@ -7,6 +7,7 @@ Refined version of v1.1
  - Add pull-up to data buffer IN/out to make sure it works properly during startup (paranoid)
  - Make address lines always IN using a +3.3v pull-up
  - Bypass caps for 74lvc245 to improve performance (paranoid)
+ - Z80 WAIT pin wired to GPIO 27
 
 ## v1.1 (released)
 Adds buffers for address/data multiplexing purposes
