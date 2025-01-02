@@ -15466,7 +15466,7 @@
 		(fields_autoplaced yes)
 		(uuid "a8304c74-c85d-43e0-877b-f1a0962f0a2b")
 		(property "Reference" "R6"
-			(at 85.725 97.7899 0)
+			(at 85.09 97.7899 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15474,8 +15474,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10kΩ"
-			(at 85.725 100.3299 0)
+		(property "Value" "1kΩ"
+			(at 85.09 100.3299 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16681,7 +16681,7 @@
 		(fields_autoplaced yes)
 		(uuid "f4b1465a-7940-4aae-a8a2-5d4aa6fe487b")
 		(property "Reference" "R5"
-			(at 85.725 64.7699 0)
+			(at 85.09 64.7699 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16689,8 +16689,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10kΩ"
-			(at 85.725 67.3099 0)
+		(property "Value" "1kΩ"
+			(at 85.09 67.3099 0)
 			(effects
 				(font
 					(size 1.27 1.27)
