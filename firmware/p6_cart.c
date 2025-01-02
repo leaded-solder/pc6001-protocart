@@ -55,6 +55,7 @@ inline static int __not_in_flash_func(listen)() {
         SET_DATA_MODE_IN; // pico A/D pins set to input now
         gpio_put(PIN_DATA_IN_OUT, 1); // 245s driving pico
         gpio_put(PIN_HIGH_LOW_MODE, 1); // high half
+        // TODO: Maybe leave it in the low half by default, so we can service IO requests faster (8-bit addresses)
         gpio_put(PIN_ADDRESS_DATA_MODE, 1); // listen to addresses
 
         // Listen
