@@ -10983,7 +10983,7 @@
 		)
 		(uuid "6bec8cea-9f32-43b4-b6a3-ec85fbc767ac")
 	)
-	(label "WAIT"
+	(label "~{WAIT}"
 		(at 51.435 86.36 180)
 		(fields_autoplaced yes)
 		(effects
@@ -11378,6 +11378,17 @@
 			(justify right bottom)
 		)
 		(uuid "a2306646-aad1-495a-a1f4-043d0acdb52c")
+	)
+	(label "~{WAIT}"
+		(at 172.085 121.92 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "a40ca350-8b6f-40b0-b6e2-1af30caea566")
 	)
 	(label "GND"
 		(at 51.435 132.08 180)
