@@ -9050,13 +9050,13 @@
 	)
 	(wire
 		(pts
-			(xy 100.33 106.68) (xy 108.585 106.68)
+			(xy 83.185 61.595) (xy 83.185 63.5)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "52a63792-0fce-4f5a-a60b-d69189fb6b3b")
+		(uuid "51823cb0-84ed-4e69-abe4-fc4755080c22")
 	)
 	(wire
 		(pts
@@ -9120,6 +9120,16 @@
 	)
 	(wire
 		(pts
+			(xy 83.185 101.6) (xy 83.185 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6313dd9c-fa36-42ed-973b-dd7ecfe3392a")
+	)
+	(wire
+		(pts
 			(xy 191.135 144.78) (xy 191.135 149.86)
 		)
 		(stroke
@@ -9157,6 +9167,36 @@
 			(type default)
 		)
 		(uuid "69cb196d-81de-43f3-9e92-ca5d5646c246")
+	)
+	(wire
+		(pts
+			(xy 83.185 71.12) (xy 109.22 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6e22ad2e-094c-4cf1-8b5d-e4ec9eb0dd44")
+	)
+	(wire
+		(pts
+			(xy 83.185 71.12) (xy 83.185 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6e469a2b-4a06-41f1-803d-4f97608ee05d")
+	)
+	(wire
+		(pts
+			(xy 83.185 95.885) (xy 83.185 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6e6bbce0-7e2e-4623-a1d1-dbf4d61b071e")
 	)
 	(wire
 		(pts
@@ -9227,16 +9267,6 @@
 			(type default)
 		)
 		(uuid "77575f06-f8d3-4673-b07f-77970982d626")
-	)
-	(wire
-		(pts
-			(xy 100.965 71.12) (xy 109.22 71.12)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "786746b6-ffe5-48fa-aea5-ceef13a1a821")
 	)
 	(wire
 		(pts
@@ -9627,6 +9657,16 @@
 			(type default)
 		)
 		(uuid "be4af992-f5d5-48cc-af2f-d32d62b1110e")
+	)
+	(wire
+		(pts
+			(xy 83.185 106.68) (xy 108.585 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c1cceb6a-eebd-49c7-8ee0-4ec7532b478d")
 	)
 	(wire
 		(pts
@@ -10145,7 +10185,7 @@
 	)
 	(text "always IN"
 		(exclude_from_sim no)
-		(at 106.68 105.41 0)
+		(at 100.33 105.41 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -14528,72 +14568,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+3.3V")
-		(at 100.965 71.12 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "7b084f65-ed62-410e-a25d-df397348207b")
-		(property "Reference" "#PWR025"
-			(at 100.965 74.93 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+3.3V"
-			(at 100.965 66.675 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 100.965 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 100.965 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 100.965 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "900b938c-22ef-4980-8dd9-f99233ec294f")
-		)
-		(instances
-			(project "PC6001 Cart Protoboard"
-				(path "/43e41326-819e-40e7-9c3a-9c7b5d01c509"
-					(reference "#PWR025")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "74xx:74LS00")
 		(at 27.94 166.37 0)
 		(unit 3)
@@ -15482,17 +15456,35 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+3.3V")
-		(at 100.33 106.68 0)
+		(lib_id "Device:R_Small_US")
+		(at 83.185 99.06 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "a5ddafff-4fea-4863-9643-3c3c08ab6409")
-		(property "Reference" "#PWR026"
-			(at 100.33 110.49 0)
+		(uuid "a8304c74-c85d-43e0-877b-f1a0962f0a2b")
+		(property "Reference" "R6"
+			(at 85.725 97.7899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10kΩ"
+			(at 85.725 100.3299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
+			(at 83.185 99.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15500,16 +15492,8 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "+3.3V"
-			(at 100.33 102.235 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 100.33 106.68 0)
+		(property "Datasheet" "~"
+			(at 83.185 99.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15517,8 +15501,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
-			(at 100.33 106.68 0)
+		(property "Description" "Resistor, small US symbol"
+			(at 83.185 99.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15526,22 +15510,16 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 100.33 106.68 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
+		(pin "2"
+			(uuid "80d17278-cb22-4d27-a7a3-390bb5fb061d")
 		)
 		(pin "1"
-			(uuid "09220947-ec03-45cc-8581-ac91dce4fc92")
+			(uuid "87d88027-0fc5-4b0c-833c-dee17d220d13")
 		)
 		(instances
 			(project "PC6001 Cart Protoboard"
 				(path "/43e41326-819e-40e7-9c3a-9c7b5d01c509"
-					(reference "#PWR026")
+					(reference "R6")
 					(unit 1)
 				)
 			)
@@ -16008,6 +15986,72 @@
 				(path "/43e41326-819e-40e7-9c3a-9c7b5d01c509"
 					(reference "U5")
 					(unit 4)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3.3V")
+		(at 83.185 61.595 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "cb421f3f-5b32-4b48-880b-e21fe6af0838")
+		(property "Reference" "#PWR025"
+			(at 83.185 65.405 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 83.185 56.515 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 83.185 61.595 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 83.185 61.595 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 83.185 61.595 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "dd8efb2b-81db-43ff-b636-7a956d4e56f8")
+		)
+		(instances
+			(project ""
+				(path "/43e41326-819e-40e7-9c3a-9c7b5d01c509"
+					(reference "#PWR025")
+					(unit 1)
 				)
 			)
 		)
@@ -16555,6 +16599,142 @@
 			(project ""
 				(path "/43e41326-819e-40e7-9c3a-9c7b5d01c509"
 					(reference "D1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3.3V")
+		(at 83.185 95.885 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f28b2354-932d-4852-b437-34657204b136")
+		(property "Reference" "#PWR026"
+			(at 83.185 99.695 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 83.185 90.805 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 83.185 95.885 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 83.185 95.885 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 83.185 95.885 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "068a9b11-07f9-4f8b-a017-724c3bbd099f")
+		)
+		(instances
+			(project "PC6001 Cart Protoboard"
+				(path "/43e41326-819e-40e7-9c3a-9c7b5d01c509"
+					(reference "#PWR026")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small_US")
+		(at 83.185 66.04 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f4b1465a-7940-4aae-a8a2-5d4aa6fe487b")
+		(property "Reference" "R5"
+			(at 85.725 64.7699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10kΩ"
+			(at 85.725 67.3099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
+			(at 83.185 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 83.185 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small US symbol"
+			(at 83.185 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "8a568bac-f3af-4c88-9abf-b8972815c9f8")
+		)
+		(pin "1"
+			(uuid "05713047-0bf9-4386-b095-71b90f6c18e7")
+		)
+		(instances
+			(project "PC6001 Cart Protoboard"
+				(path "/43e41326-819e-40e7-9c3a-9c7b5d01c509"
+					(reference "R5")
 					(unit 1)
 				)
 			)
