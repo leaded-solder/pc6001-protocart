@@ -1,4 +1,6 @@
 CMakeFiles/
+CMakeDoxygenDefaults.cmake
+CMakeDoxyfile.in
 pico_flash_region.ld
 _deps
 build
