@@ -29,7 +29,6 @@
 #define ADDR_DATA_GPIO_MASK  	0x000000ff // GPIO 0..7 inclusive
 #define CS_GPIO_MASK            0x00000100 // GPIO 18 lights up when CS2 or CS3 are selected
 #define ALL_SELECTS_GPIO_MASK   0x00002900 // ROMCS, RAMCS, IORQ (TODO: ESP interrupt?)
-#define ROMADDR_GPIO_MASK       0x0000fffc // Just the addresses in an 8K ROM
 
 #define SET_DATA_MODE_OUT   gpio_set_dir_out_masked(ADDR_DATA_GPIO_MASK)
 #define SET_DATA_MODE_IN    gpio_set_dir_in_masked(ADDR_DATA_GPIO_MASK)
@@ -37,10 +36,10 @@
 #define PIN_ADDRESS_DATA_MODE   20 // low for data, high for address
 #define PIN_HIGH_LOW_MODE       21 // low for low, high for high half (only for address)
 #define PIN_DATA_IN_OUT         22 // high for in, low for out
+#define PIN_Z80_WRITE           10 // ~WR on the Z80 edge
+#define PIN_RAM_WRITE           12 // ~WE derived from PC-6001 cart edge
 
 #include "p6_bootrom.h"
-
-// FIXME: oops i forgot R/W, I guess we're just going to serve up a ROM
 
 /**
  * Run whenever we're not actively serving something. Waits for
@@ -68,7 +67,7 @@ inline static int __not_in_flash_func(listen)() {
             addr = (pins & ADDR_DATA_GPIO_MASK) << 8; // shift into upper half
             // switch pin set (TODO: How do we know it switched?)
             gpio_put(PIN_HIGH_LOW_MODE, 0); // low half
-            // TODO: Delay???
+            // TODO: Delay??? do we need one? we can only sleep_us from C which is too many ns
             pins = gpio_get_all();
             addr |= (pins & ADDR_DATA_GPIO_MASK); // lower half of address now
             // switch to data pins now
@@ -82,6 +81,9 @@ inline static int __not_in_flash_func(listen)() {
             SET_DATA_MODE_IN;
             continue; // return to normal listening
         }
+
+        // if pins & ram_sel -> ...
+        // if pins & iorq -> ...
         // TODO: RAM, IO select/register writes, other peripherals
     }
 
