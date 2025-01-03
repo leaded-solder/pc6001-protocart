@@ -13208,15 +13208,15 @@
 		(fields_autoplaced yes)
 		(uuid "3b82f59f-f037-4a59-a2a5-57b71d709f4c")
 		(property "Reference" "U6"
-			(at 121.92 28.575 0)
+			(at 121.92 29.21 0)
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
 			)
 		)
-		(property "Value" "SN74LVC245AN"
-			(at 121.92 31.115 0)
+		(property "Value" "SN74LVC245AN (LoAddr)"
+			(at 121.92 31.75 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -15791,7 +15791,7 @@
 				)
 			)
 		)
-		(property "Value" "SN74LVC245AN"
+		(property "Value" "SN74LVC245AN (HiAddr)"
 			(at 121.92 66.04 0)
 			(effects
 				(font
@@ -16152,7 +16152,7 @@
 				)
 			)
 		)
-		(property "Value" "SN74LVC245AN"
+		(property "Value" "SN74LVC245AN (Data)"
 			(at 121.285 101.6 0)
 			(effects
 				(font

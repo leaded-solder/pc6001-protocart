@@ -68,7 +68,7 @@
 	)
 	(attr through_hole)
 	(fp_rect
-		(start -19.476 -49.63)
+		(start -19.476 -52.13)
 		(end 1.524 1.37)
 		(stroke
 			(width 0.1)
@@ -79,8 +79,8 @@
 		(uuid "e8f26e48-5484-4a26-b64f-294552325949")
 	)
 	(fp_rect
-		(start -12.976 -50.93)
-		(end -4.976 -44.93)
+		(start -12.976 -51.8)
+		(end -4.976 -45.8)
 		(stroke
 			(width 0.1)
 			(type default)
@@ -126,39 +126,6 @@
 				(thickness 0.15)
 			)
 		)
-	)
-	(dimension
-		(type aligned)
-		(layer "Cmts.User")
-		(uuid "1c5d645a-1185-4d1f-99cf-836bdb6751f4")
-		(pts
-			(xy 1.22 -49.63) (xy 1.22 -50.93)
-		)
-		(height -31.1)
-		(gr_text "1.3000 mm"
-			(at -31.03 -50.28 90)
-			(layer "Cmts.User")
-			(uuid "1c5d645a-1185-4d1f-99cf-836bdb6751f4")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(format
-			(prefix "")
-			(suffix "")
-			(units 3)
-			(units_format 1)
-			(precision 4)
-		)
-		(style
-			(thickness 0.1)
-			(arrow_length 1.27)
-			(text_position_mode 0)
-			(extension_height 0.58642)
-			(extension_offset 0.5) keep_text_aligned)
 	)
 	(pad "1" thru_hole rect
 		(at -17.78 -48.26)
