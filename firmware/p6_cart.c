@@ -92,7 +92,7 @@
 
 #define ALL_GPIO_MASK          0x3FFFFFFF // 30 IOs 0..29 inclusive
 #define ADDR_GPIO_MASK         0x0003fffc // GPIO 2 .. GPIO 17 inclusive, GPIO 0 and GPIO 1 off
-#define ROMADDR_GPIO_MASK      0x0000fffc // Just the addresses in an 8K ROM
+#define ROMADDR_GPIO_MASK      0x00003ffc // Just the addresses in an 8K ROM
 #define CS_GPIO_MASK           0x00040001 // GPIO 18 lights up when CS2 or CS3 are selected
 #define CS2_GPIO_MASK          0x00040000
 #define CS3_GPIO_MASK          0x00000001
@@ -125,12 +125,15 @@ int __not_in_flash_func(emulate_boot_rom)() {
             SET_DATA_MODE_OUT;
 
             addr = (pins & ROMADDR_GPIO_MASK) >> 2; // shift down so it starts at 0
+
+            if(pins & CS3_GPIO_MASK) {
+                addr += 8192; // it's the second "rom chip" in a PC-6006
+            }
+
             // address limited to 0x3fff (8k) because otherwise a14 and a15 from the decode will interfere
 
-            // FIXME: this modulo hack should not exist. try moving to CS2 and see where we get to
-
             // shifted by number of address pins (and also the ESP pins on 0, 1 and GPIO18 for ~CS) - GPIO0 to 18 inclusive = 19 pins
-            gpio_put_masked(DATA_GPIO_MASK, ((uint32_t)(P6_bootrom[addr % 8192])) << 19); // modulo is HACK
+            gpio_put_masked(DATA_GPIO_MASK, ((uint32_t)(P6_bootrom[addr])) << 19); // modulo is HACK
 
             // wait for select to release (go high)
             while(!(gpio_get_all() & CS_GPIO_MASK));

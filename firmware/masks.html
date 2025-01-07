@@ -15,6 +15,10 @@
                                 19: 'd0',
                         }
 
+                        for(var i = 3; i < 16; ++i) {
+                                known_ios[i] = 'a' + i;
+                        }
+
                         function recalculateMask() {
                                 // Step through all the GPIOs
                                 var checkboxes = document.getElementsByTagName('input');
