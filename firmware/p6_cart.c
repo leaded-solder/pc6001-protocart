@@ -126,7 +126,7 @@ int __not_in_flash_func(emulate_boot_rom)() {
 
             addr = (pins & ROMADDR_GPIO_MASK) >> 2; // shift down so it starts at 0
 
-            if(pins & CS3_GPIO_MASK) {
+            if(!(pins & CS3_GPIO_MASK)) {
                 addr += 8192; // it's the second "rom chip" in a PC-6006
             }
 
