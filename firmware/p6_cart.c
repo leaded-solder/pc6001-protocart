@@ -129,7 +129,7 @@ int __not_in_flash_func(emulate_boot_rom)() {
 
             if(!(pins & CS3_GPIO_MASK)) { // CS3 asserted... this code may not even be necessary
                 data = 3;
-                addr += 8192; // it's the second 8k "rom chip" in a PC-6006, ~CS3 is set by A13
+                //addr += 8192; // it's the second 8k "rom chip" in a PC-6006, ~CS3 is set by A13
             }
 
             // address limited to 0x3fff (8k) because otherwise a14 and a15 from the decode will interfere
