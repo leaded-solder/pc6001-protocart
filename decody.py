@@ -66,10 +66,10 @@ memory_map = [ # PV7
 
 pc6001_memory_map = [
     ( 0x0000, 'basic rom' ),
-    ( 0x4000, 'ROM1 4kByte' ),
-    ( 0x5000, 'Prohibited' ),
-    ( 0x6000, 'ROM2 4kByte' ),
-    ( 0x7000, 'Prohibited 2' ),
+    ( 0x4000, 'ROM1 8kByte' ),
+    ( 0x5fff, 'ROM1 8kByte (end)' ),
+    ( 0x6000, 'ROM2 8kByte' ),
+    ( 0x7fff, 'ROM2 8kByte (end)' ),
     ( 0x8000, 'ExRAM 16kByte' ),
     ( 0xc000, 'Int RAM 16kByte' )
 ]

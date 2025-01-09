@@ -92,7 +92,7 @@
 
 #define ALL_GPIO_MASK          0x3FFFFFFF // 30 IOs 0..29 inclusive
 #define ADDR_GPIO_MASK         0x0003fffc // GPIO 2 .. GPIO 17 inclusive, GPIO 0 and GPIO 1 off
-#define ROMADDR_GPIO_MASK      0x00003ffc // Just the addresses in an 8K ROM
+#define ROMADDR_GPIO_MASK      0x00007ffc // Just the addresses in a 16K ROM
 #define CS_GPIO_MASK           0x00040001 // When CS2 (GPIO18) or CS3 (GPIO0) are enabled
 #define CS2_GPIO_MASK          0x00040000
 #define CS3_GPIO_MASK          0x00000001
@@ -125,16 +125,21 @@ int __not_in_flash_func(emulate_boot_rom)() {
             SET_DATA_MODE_OUT;
 
             addr = (pins & ROMADDR_GPIO_MASK) >> 2; // shift down so it starts at 0
+            data = 2;
 
-            if(!(pins & CS3_GPIO_MASK)) { // CS3 asserted
-                addr += 8192; // it's the second 8k "rom chip" in a PC-6006
+            if(!(pins & CS3_GPIO_MASK)) { // CS3 asserted... this code may not even be necessary
+                data = 3;
+                addr += 8192; // it's the second 8k "rom chip" in a PC-6006, ~CS3 is set by A13
             }
 
             // address limited to 0x3fff (8k) because otherwise a14 and a15 from the decode will interfere
 
             // shifted by number of address pins (and also the ESP pins on 0, 1 and GPIO18 for ~CS) - GPIO0 to 18 inclusive = 19 pins
             //gpio_put_masked(DATA_GPIO_MASK, ((uint32_t)(P6_bootrom[addr % P6_bootrom_len])) << 19); 
-            gpio_put_masked(DATA_GPIO_MASK, 0); 
+
+            // Test to see origination of selects
+            gpio_put_masked(DATA_GPIO_MASK, ((uint32_t)data) << 19); 
+            //gpio_put_masked(DATA_GPIO_MASK, 0); 
 
             // wait for select to release (go high - inverse of entry operation)
             while ((~(gpio_get_all())) & CS_GPIO_MASK);
