@@ -93,7 +93,7 @@
 #define ALL_GPIO_MASK          0x3FFFFFFF // 30 IOs 0..29 inclusive
 #define ADDR_GPIO_MASK         0x0003fffc // GPIO 2 .. GPIO 17 inclusive, GPIO 0 and GPIO 1 off
 #define ROMADDR_GPIO_MASK      0x00003ffc // Just the addresses in an 8K ROM
-#define CS_GPIO_MASK           0x00040001 // GPIO 18 lights up when CS2 or CS3 are selected
+#define CS_GPIO_MASK           0x00040001 // When CS2 (GPIO18) or CS3 (GPIO0) are enabled
 #define CS2_GPIO_MASK          0x00040000
 #define CS3_GPIO_MASK          0x00000001
 #define DATA_GPIO_MASK         0x07f80000 // GPIO 19 .. GPIO 26 inclusive (0xff << 19)
@@ -112,8 +112,8 @@ int __not_in_flash_func(emulate_boot_rom)() {
     bool is_register_write = false;
 
     while(true) {
-        // wait for chip select to go low
-		while ((pins = gpio_get_all()) & CS2_GPIO_MASK);
+        // wait for either chip select to go low
+		while (!(~(pins = gpio_get_all()) & CS_GPIO_MASK));
 
         // TODO: Detect R/W pin in future version of hardware
 
@@ -126,18 +126,18 @@ int __not_in_flash_func(emulate_boot_rom)() {
 
             addr = (pins & ROMADDR_GPIO_MASK) >> 2; // shift down so it starts at 0
 
-            if(!(pins & CS3_GPIO_MASK)) {
-                addr += 8192; // it's the second "rom chip" in a PC-6006
+            if(!(pins & CS3_GPIO_MASK)) { // CS3 asserted
+                addr += 8192; // it's the second 8k "rom chip" in a PC-6006
             }
 
             // address limited to 0x3fff (8k) because otherwise a14 and a15 from the decode will interfere
 
             // shifted by number of address pins (and also the ESP pins on 0, 1 and GPIO18 for ~CS) - GPIO0 to 18 inclusive = 19 pins
-            gpio_put_masked(DATA_GPIO_MASK, ((uint32_t)(P6_bootrom[addr % P6_bootrom_len])) << 19); 
-            //gpio_put_masked(DATA_GPIO_MASK, 0); 
+            //gpio_put_masked(DATA_GPIO_MASK, ((uint32_t)(P6_bootrom[addr % P6_bootrom_len])) << 19); 
+            gpio_put_masked(DATA_GPIO_MASK, 0); 
 
-            // wait for select to release (go high)
-            while(!(gpio_get_all() & CS2_GPIO_MASK));
+            // wait for select to release (go high - inverse of entry operation)
+            while ((~(gpio_get_all())) & CS_GPIO_MASK);
 
             SET_DATA_MODE_IN;
         }
