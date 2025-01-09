@@ -113,7 +113,7 @@ int __not_in_flash_func(emulate_boot_rom)() {
 
     while(true) {
         // wait for chip select to go low
-		while ((pins = gpio_get_all()) & CS_GPIO_MASK);
+		while ((pins = gpio_get_all()) & CS2_GPIO_MASK);
 
         // TODO: Detect R/W pin in future version of hardware
 
@@ -133,10 +133,11 @@ int __not_in_flash_func(emulate_boot_rom)() {
             // address limited to 0x3fff (8k) because otherwise a14 and a15 from the decode will interfere
 
             // shifted by number of address pins (and also the ESP pins on 0, 1 and GPIO18 for ~CS) - GPIO0 to 18 inclusive = 19 pins
-            gpio_put_masked(DATA_GPIO_MASK, ((uint32_t)(P6_bootrom[addr])) << 19); // modulo is HACK
+            gpio_put_masked(DATA_GPIO_MASK, ((uint32_t)(P6_bootrom[addr % P6_bootrom_len])) << 19); 
+            //gpio_put_masked(DATA_GPIO_MASK, 0); 
 
             // wait for select to release (go high)
-            while(!(gpio_get_all() & CS_GPIO_MASK));
+            while(!(gpio_get_all() & CS2_GPIO_MASK));
 
             SET_DATA_MODE_IN;
         }
