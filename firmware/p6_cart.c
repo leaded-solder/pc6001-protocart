@@ -109,6 +109,7 @@ int __not_in_flash_func(emulate_boot_rom)() {
     uint32_t pins = 0;
     uint16_t addr;
     uint8_t data;
+    uint16_t shift;
     bool is_register_write = false;
 
     while(true) {
@@ -125,11 +126,10 @@ int __not_in_flash_func(emulate_boot_rom)() {
             SET_DATA_MODE_OUT;
 
             addr = (pins & ROMADDR_GPIO_MASK) >> 2; // shift down so it starts at 0
-            data = 2;
-
+            
+            shift = 0;
             if(!(pins & CS3_GPIO_MASK)) { // CS3 asserted... this code may not even be necessary
-                data = 3;
-                //addr += 8192; // it's the second 8k "rom chip" in a PC-6006, ~CS3 is set by A13
+                shift = 8192;
             }
 
             // address limited to 0x3fff (8k) because otherwise a14 and a15 from the decode will interfere
@@ -138,7 +138,7 @@ int __not_in_flash_func(emulate_boot_rom)() {
             //gpio_put_masked(DATA_GPIO_MASK, ((uint32_t)(P6_bootrom[addr % P6_bootrom_len])) << 19); 
 
             // Test to see origination of selects
-            gpio_put_masked(DATA_GPIO_MASK, ((uint32_t)data) << 19); 
+            gpio_put_masked(DATA_GPIO_MASK, ((uint32_t)P6_bootrom[addr + shift]) << 19); 
             //gpio_put_masked(DATA_GPIO_MASK, 0); 
 
             // wait for select to release (go high - inverse of entry operation)
