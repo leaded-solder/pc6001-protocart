@@ -13,10 +13,17 @@
                                 2: 'a0',
                                 18: '~ROM_CS',
                                 19: 'd0',
+                                27: 'cmd',
+                                28: 'proc',
+                                29: 'int'
                         }
 
-                        for(var i = 3; i < 16; ++i) {
-                                known_ios[i] = 'a' + i;
+                        for(var i = 0; i < 16; ++i) {
+                                known_ios[2 + i] = 'a' + i;
+                        }
+
+                        for(var i = 0; i < 8; ++i) {
+                                known_ios[19 + i] = 'd' + i;
                         }
 
                         function recalculateMask() {
