@@ -12,12 +12,12 @@ with open(sys.argv[1], 'rb') as f:
 # do some padding just to be on the safe side
 if len(b) < 8192:
     print('Padding to 8k')
-    while len(b) < 8192:
-        b = b + bytes([0x00])
+    b = b + bytes([ 0x00 ] * (8192 - len(b)))
+    assert(len(b) == 8192)
 elif len(b) < 16384:
     print('Padding to 16k')
-    while len(b) < 16384:
-        b = b + bytes([0x00])
+    b = b + bytes([ 0x00 ] * (16384 - len(b)))
+    assert(len(b) == 16384)
 else:
     print(f"Danger: this ROM size ({len(b)}) seems like it's more than 16K, which the cartridge does not currently support")
 
