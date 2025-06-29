@@ -1,5 +1,7 @@
 NEC PC-6001 Canyon Climber Cartridge
 
+thank you to alank2 for all of these measurements
+
 # Case
 width 3.296" (83-ish mm)
 length 4.320" (roughly 110mm)
