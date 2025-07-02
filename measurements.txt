@@ -7,6 +7,9 @@ width 3.296" (83-ish mm)
 length 4.320" (roughly 110mm)
 thickness 0.797" (roughly 20mm)
 
+back case standoff 5mm
+front case standoff 8mm
+
 # PCB
 pcb width 2.870"
 pcb length 3.559" (no fingers)
