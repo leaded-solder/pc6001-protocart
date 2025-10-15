@@ -8797,6 +8797,16 @@
 		)
 		(uuid "69c6eb54-0174-4e8e-8d26-74c34b33f090")
 	)
+	(text "TODO: Delete once confirmed it works"
+		(exclude_from_sim no)
+		(at 218.44 117.475 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "80c7e898-f022-489b-80a1-9644fa461eb5")
+	)
 	(text "http://p6ers.net/mm/pc-6001/dev/flashromcard/16k.html for 16K"
 		(exclude_from_sim no)
 		(at 289.56 151.765 0)
