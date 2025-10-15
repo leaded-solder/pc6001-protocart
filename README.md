@@ -15,6 +15,9 @@ Adds buffers for address/data multiplexing purposes
 ## v1.0 (released)
 Initial version, unbuffered
 
+# Open source stuff used
+ * [Pablo Oyarzo poka-yoke library](https://github.com/PabloOyarzo/poka-yoke_rxtx)
+
 # Special Thanks
  * alank2 on the Vintage Computer Festival forum, for measuring his Canyon Climber cartridge
  * thweasel on the FujiNet discord for helping check my design

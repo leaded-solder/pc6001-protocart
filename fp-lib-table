@@ -5,4 +5,5 @@
   (lib (name "UltimatePico")(type "KiCad")(uri "${KIPRJMOD}/UltimatePico.pretty")(options "")(descr ""))
   (lib (name "Espressif")(type "KiCad")(uri "${KIPRJMOD}/Espressif/Espressif.pretty")(options "")(descr ""))
   (lib (name "microSD_Breakout")(type "KiCad")(uri "${KIPRJMOD}/microSD_Breakout.pretty")(options "")(descr ""))
+  (lib (name "poka-yoke_rxtx")(type "KiCad")(uri "${KIPRJMOD}/poka-yoke_rxtx.pretty")(options "")(descr ""))
 )
